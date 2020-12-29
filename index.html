@@ -9,17 +9,31 @@
 </head>
 <body>
 <main class='main'>
-	<h2>My sites:</h2>
+	<h2>Sites:</h2>
 	<div class='cards'>
 		<div class='card'>
-			<iframe scrolling='no' src='https://infret.github.io/internet-magazine/' title="Internet magazine"></iframe>
-			<div class='badge badge_html'>HTML</div>
-			<div class='badge badge_css'>CSS</div>
-			<div class='badge badge_js'>JavaScript</div>
+			<iframe class='preview' scrolling='no' src='https://infret.github.io/internet-magazine/' title="Internet magazine"></iframe>
+			<a class='overlay' href='https://infret.github.io/internet-magazine'></a>
+			<div class='badges'>
+				<div class='badge badge_html'>HTML</div>
+				<div class='badge badge_css'>CSS</div>
+				<div class='badge badge_js'>JavaScript</div>
+			</div>
 			<h3>Internet Magazine</h3>
 			<p>Responsive and adaptive static page, representing internet magazine with some samples of blog and shop features</p>
 		</div>
-		<a class='overlay' href='https://infret.github.io/internet-magazine'></a>
+		<div class='card'>
+			<!--			<iframe class='preview' scrolling='no' src='https://infret.github.io/online-store/' title="Online store"></iframe>-->
+			<div class='preview'>In development</div>
+			<a class='overlay' href='#'></a>
+			<div class='badges'>
+			<div class='badge badge_ts'>TypeScript</div>
+			<div class='badge badge_react'>React</div>
+			<div class='badge badge_redux'>Redux</div>
+			</div>
+			<h3>Online store</h3>
+			<p>Responsive and adaptive Single Page Application representing online book store with corresponding functionality of catalog and cart</p>
+		</div>
 	</div>
 </main>
 </body>
