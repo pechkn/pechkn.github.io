@@ -88,17 +88,12 @@ p {
     color: white;
 }
 
-.preview {
+iframe {
     width: 300px;
     height: 300px;
     border: none;
     border-radius: 5px 5px 0 0;
     overflow: hidden;
-
-    text-align: center;
-    line-height: 300px;
-    font-weight: bold;
-    background-color: #fafafa;
 }
 
 .overlay {
