@@ -2,38 +2,31 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-:focus {
     outline: none;
+    font-family: sans-serif;
 }
 
 body {
-    font-family: sans-serif;
     --elevation: 0 1px 2px rgba(0, 0, 0, 0.5), 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    margin: 10px;
 }
 
 a {
     cursor: pointer;
 }
 
-.main {
-    width: 100vw;
+h2, h3 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+main {
+    width: 100%;
     max-width: 1000px;
     margin: 0 auto;
-}
-
-h3 {
-    text-align: center;
-}
-
-h2 {
-    text-align: center;
-    margin: 10px;
-}
-
-p {
-    margin: 10px;
 }
 
 .cards {
@@ -48,15 +41,14 @@ p {
     box-shadow: var(--elevation);
     width: 360px;
     margin: 10px;
+    list-style: none;
     border-radius: 5px;
+    padding-top: 285px;
 }
 
-
 iframe {
-    position: relative;
-    top:0;
-    left: 0;
-    margin-bottom: -94px;
+    position: absolute;
+    top: 0;
     width: 480px;
     height: 360px;
     border: none;
@@ -75,44 +67,51 @@ iframe {
     position: absolute;
     top: 0;
     left: 0;
-    height: 280px;
+    height: 270px;
     width: 360px;
 }
 
-.badges {
-    display: flex;
-    margin: 10px;
-}
-
-.badge {
-    padding: 6px 10px;
+span:before {
+    margin: 0 -5px 0 10px;
     border-radius: 10px;
-    margin-right: 8px;
+    padding: 6px 10px;
 }
 
-.badge_js {
-    background-color: #f1e05a;
-}
-
-.badge_html {
+.html:before {
+    content: 'HTML';
     background-color: #e44b23;
 }
 
-.badge_css {
-    color: white;
+.css:before {
+    content: 'CSS';
     background-color: #563d7c;
+    color: white;
 }
 
-.badge_ts {
+.js:before {
+    content: 'JavaScript';
+    background-color: #f1e05a;
+}
+
+.ts:before {
+    content: 'Typescript';
     background-color: #2b7489;
     color: white;
 }
 
-.badge_react {
+.react:before {
+    content: 'React';
     background-color: #61DBFB;
 }
 
-.badge_redux {
+.redux:before {
+    content: 'Redux';
     background-color: #764abc;
+    color: white;
+}
+
+.bootstrap:before {
+    content: 'Bootstrap';
+    background-color: #7952b3;
     color: white;
 }
