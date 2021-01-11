@@ -4,6 +4,7 @@
     padding: 0;
     outline: none;
     font-family: sans-serif;
+    color: black;
 }
 
 body {
@@ -16,6 +17,7 @@ p {
 
 a {
     cursor: pointer;
+    text-decoration: none;
 }
 
 h2, h3 {
@@ -43,32 +45,16 @@ main {
     margin: 10px;
     list-style: none;
     border-radius: 5px;
-    padding-top: 285px;
 }
 
-iframe {
-    position: absolute;
-    top: 0;
-    width: 480px;
-    height: 360px;
-    border: none;
+.img {
     border-radius: 5px 5px 0 0;
-    overflow: hidden;
-    zoom: 3;
-    -moz-transform: scale(0.75);
-    -moz-transform-origin: 0 0;
-    -o-transform: scale(0.75);
-    -o-transform-origin: 0 0;
-    -webkit-transform: scale(0.75);
-    -webkit-transform-origin: 0 0;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 270px;
+    height: 254px;
     width: 360px;
+    margin-bottom: 10px;
+
+    text-align: center;
+    line-height: 254px;
 }
 
 span:before {
