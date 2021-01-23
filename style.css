@@ -115,6 +115,12 @@ span:before {
   color: white;
 }
 
+.mobx:before {
+  content: 'Mobx';
+  background-color: #c35921;
+  color: white;
+}
+
 .bootstrap:before {
   content: 'Bootstrap';
   background-color: #7952b3;
