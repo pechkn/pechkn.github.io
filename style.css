@@ -101,7 +101,7 @@ span:before {
 }
 
 .ts:before {
-  content: 'Typescript';
+  content: 'TypeScript';
   background-color: #2b7489;
   color: white;
 }
