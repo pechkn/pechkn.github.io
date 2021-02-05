@@ -1,2 +1,3 @@
 permalink: /:title/
+markdown: GFM
 post_dirs: false
