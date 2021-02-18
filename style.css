@@ -3,14 +3,14 @@
   padding: 0;
   color: #333;
   text-decoration: none;
+  font-family: sans-serif;
+  line-height: 1.5;
 }
 
 body {
   width: 100%;
   margin: 0 auto;
   padding: 16px;
-  font: sans-serif;
-  line-height: 1.5;
   max-width: 840px;
 }
 
@@ -34,6 +34,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  gap: 4px;
   max-width: 362px;
   margin: 10px;
   border-radius: 5px;
