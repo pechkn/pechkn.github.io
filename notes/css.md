@@ -42,6 +42,8 @@ conditional operators and even functions. Preprocessors change the way
 stylesheets are written and then compile them to normal CSS so browser can
 recognize it.
 
+**CSS frameworks** are another tools to make creating layouts easier. They offer a lot of preset styles, which are usually applied to elements as HTML classes, e. g. `<img class='m-auto'/>` is equal to `<img style='margin: auto;'/>`; or as customized tags in modern frontend framoworks, e.g. `<Pagination>`, especially with raising popularity of **CSS-in-JS** approach such as **Styled components**. Examples of CSS frameworks are Bootstrap, Materialize, Ant Design, Tailwind.
+
 Common problem of writing layouts is **scope leaking** of styles. Than
 means situation where changing styles of one element can suddenly change
 styles of another one. It occurs mainly because of similar classnames or
