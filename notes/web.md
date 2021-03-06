@@ -43,10 +43,21 @@ displaying them to user. Web browser consists of
 finding specific servers and connecting to them, and
 **rendering engine**, which converts HTML document to acceptable view.
 
+**Cross-Origin Resource Sharing (CORS)** is an HTTP-header based mechanism 
+that allows a server to indicate it' own domains from which browser is allowed
+to load resources. This mechanism makes possible secure cross-origin requests
+and data transfers between browsers and servers, and is implemented via 
+preliminary request that checks if connection is possible.
+
+Important to note the **Open Web Application Security Project (OWASP)**,
+nonprofit foundation that works to improve the security of software.
+It monitors possible vulnerabilities in web and publishes their summaries regularly.
+OWASP is very useful information resource for web-developers.
+
 *Let's summarize*. There is one computer, that is used to access the
 website, let's call it *client*, and another, that hosts website, as
 we call it, *server*. The moment *client* enters some URL into
 browser, browser connects with DNS server, finds IP of server, related
-with entered in URL field domain name, and requests in format IP:port
-hypertext document using HTTP or HTTPS protocol, then renders received
-document and displays it.
+with entered in URL field domain name, checks possibility of CORS connection
+and requests hypertext document using HTTP or HTTPS protocol in format IP:port,
+then renders received document and displays it.
