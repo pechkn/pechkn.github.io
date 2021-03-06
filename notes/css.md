@@ -46,9 +46,9 @@ recognize it.
 They offer a lot of preset styles, which are usually applied to elements as HTML classes,
 e. g. `<img class='m-auto'/>` is equal to `<img style='margin: auto;'/>`;
 or as customized tags in modern frontend frameworks, e.g. `<Pagination>`,
-especially with raising popularity of **CSS-in-JS** approach such as **Styled components**,
-implying writing stylesheets right in the JavaScript files, 
-sometimes in a form of reusable objects with styles, e.g. `style = {margin: 'auto'}`
+especially with raising popularity of **CSS-in-JS** approach such as **Styled components**
+or **CSS modules** that make stylesheets modular and sometimes even imply writing them directly into JavaScript files, 
+sometimes in a form of reusable objects with styles, e.g. `style = { margin: 'auto' }`
 Examples of CSS frameworks are Bootstrap, Materialize, Ant Design, Tailwind.
 
 Common problem of writing layouts is **scope leaking** of styles. Than
