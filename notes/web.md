@@ -76,6 +76,11 @@ centers. The goal is to provide high availability and performance by distributin
 **Denial-of-service (DoS)** attacks, when servers are flooded with superfluous requests in attempt to overload systems and prevent legitimate requests from being
 fulfilled.
 
+As web apps increase in size in complexity, they begin to replace traditional mobile or even desktop apps. This approach is called **Progressive Web App (PWA)** and
+such apps must implement following features: HTTPS, **service worker** and a **manifest**. Service worker is a script that controls handling network requests and
+asset caching. It can make web page faster and even work offline. Manifest is JSON file that controls how app appears to the user: describes the name of the app,
+the start URL, icons etc, much like mobile app's manifest.
+
 Important to note the **Open Web Application Security Project (OWASP)**, nonprofit foundation that works to improve the security of software. It monitors possible
 vulnerabilities in web and publishes their summaries regularly. OWASP is very useful information resource for web-developers.
 
