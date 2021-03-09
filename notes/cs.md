@@ -1,23 +1,47 @@
 # General concepts
 
+**Declarative programming** is a paradigm of building programs by expressing the logic of element's without describing their control flow. One type of declarative
+programming is **Functional programming (FP)**. It assumes constructing programs by applying and composing functions, mainly **pure** ones. Pure function, firstly,
+doesn't have side-effects and, secondly, always gives same output with same input. 
+
+On the contrary, **imperative programming** assumes implementing algorithms in exact explicit steps, impure **procedures**. The main implementation of it, 
+**Object-Oriented Programming (OOP)**, is based on the concept of objects which can contain data in form of fields and code, in the form of methods. 4 principles of
+OOP are:
+- *Encapsulation*, ability to change access scope of field
+
+- *Abstraction*, separating identical properties of different objects into another
+
+- *Inheritance*, ability to create objects by extending existing ones
+
+- *Polymorphism*, different method behaviour depending on type and amount of input
+ 
+**SOLID** is an OOP acronym for a group of five good principles in programming that allows to write easy to understand and change code. It stands for 5 principles:
+- *Single responsibility* states that class does one and only one thing
+
+- *Open/closed* assumes that class to be open or closed to be used by others
+    
+- *Liskov's substitution* states that class can be replaced by any of its children
+    
+- *Interface segregation* assumes that classes' interfaces should be separated into many small promises for simpler interaction
+
+- *Dependency inversion* assumes that classes shouldn't expect each other to never change, should use promises and could change as long as they allow
+
 The objects of all manipulations in programming are **data structures**:
+- *Array* consists of a collection of elements, each identified by index
 
-- *Array* consists of a collection of elements, each identified by index.
+- *Stack* is a collection of elements with two main principal operations - *push* and *pop* in *last in, first out (LIFO)* order
 
-- *Stack* is a collection of elements with two main principal operations - *push* and *pop* in *last in, first out (LIFO)* order.
+- *Queue* is a collection of entities that can be modified by addition and removal of entities in *first in, first out (FIFO)* order
 
-- *Queue* is a collection of entities that can be modified by addition and removal of entities in *first in, first out (FIFO)* order.
+- *Linked list* is a linear collection of data elements whose order is not given by their physical placement in memory. Instead, each element points to the next
 
-- *Linked list* is a linear collection of data elements whose order is not given by their physical placement in memory. Instead, each element points to the next.
+- *Graph* represents relations or connections between nodes. Graph can be *directed* or *undirected*, *weighted* or *non-weighted*
 
-- *Graph* represents relations or connections between nodes. Graph can be *directed* or *undirected*, *weighted* or *non-weighted*.
+- *Tree* is a graph that simulates a hierarchical tree structure, with a root value and subtrees of children with a parent node, represented as a set of linked nodes
 
-- *Tree* is a graph that simulates a hierarchical tree structure, with a root value and subtrees of children with a parent node, represented as a set of linked nodes.
+- *Hash table* implements an associative array that can map keys to values
 
-- *Hash table* implements an associative array that can map keys to values.
-
-Probably the most important part of computer science is **algorithms**:
-
+Very important part of computer science is **algorithms**:
 - *Binary Search* finds index of target number in sorted array of other numbers by dividing it on two halves on each iteration. Efficiency is O(log(n)),
 where *n* is array length.
 
@@ -60,3 +84,47 @@ is O(a * b), where *a* and *b* are matrix dimensions.
 - *Floyd's Cycle Algorithm* detects cycle in a linked list by hashing and grouping nodes. Efficiency is O(n).
 
 - *Topological Sort* constructs topological flattened sequence of nodes from weighted Directed Acycled Graph (DAG). Efficiency is O(v + e).
+
+**Patterns** are general, reusable solutions to a commonly occurring problems in software development:
+- *Factory Method* assumes that superclass with interface for creating objects allows child classes to alter their type
+
+- *Abstract Factory* assumes the possibility of creating families of related objects without specifying their concrete classes
+
+- *Builder* assumes constructing complex objects step by step with ability to produce different types of it on different stages
+
+- *Prototype* is an abstract instance with non-unique code that can be shared across multiple objects
+
+- *Singleton* is a class that strictly has only one instance and provides a global access point to itself
+
+- *Adapter* is something that allows objects with incompatible interfaces to interact
+
+- *Bridge* assumes splitting large class or closely related classes into abstraction and implementation which can be developed independently
+
+- *Composite* is an object that can be recursive child and parent of other objects while still normally acting as individual object
+
+- *Decorator* is a wrapper that can attach new behaviors to objects by placing them inside itself
+
+- *Facade* is a simplified interface to a library, a framework, or any other complex set of classes
+
+- *Flyweight* assumes fitting more objects into the available amount of memory by sharing common parts in multiple objects
+
+- *Proxy* is a placeholder of another object that allows to access the object and perform something before or after it
+
+And, finally, all code, good or bad, should be covered with different **tests**:
+- *Unit testing* ensures that any part of the code delivers expected output
+
+- *Component testing* verifies the functionality and/or usability of single complex object
+
+- *Smoke testing* verifies the basic functionality of program at earlier stages of development
+
+- *Integration testing* finds out how individual components function together
+
+- *Regression testing* makes sure that codebase change hasn’t broken the existing functionality
+
+- *Sanity testing* determines that the minor modifications have fixed the issues and haven't introduced new ones
+
+- *System testing* evaluates complete, integrated system's compliance with the specified requirements at final stages
+
+- *User acceptance testing* verifies that software can handle actual users' required tasks in real-world scenarios*
+
+**Test-driven development (TDD)** is a software development process relying on software requirements being tested before release and tracking all development by repeatedly testing software against all cases.
