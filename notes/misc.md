@@ -14,4 +14,14 @@ changes of files in directory, managing repositories and branches with different
 To preserve and backup all VCS information, it is often hosted on servers. **GitHub** is the most widely used free hosting for Git repositories, as well as Gitlab and
 Bitbucket. Both offline and online Git tools are neccessary for any developer's career.
 
+**Webpack** is an open-source JS module bundler that transforms front-end assets such as HTML, CSS, and images if the corresponding loaders are included and generates
+static assets representing those modules with dependencies. It's config represents JS module with exports and rules for sources, e. g. `const cssRegex = /\.css$/`, 
+`mode: isEnvProduction ? 'production' : isEnvDevelopment && 'development'`. Most web apps nowadays use webpack to compress and control included resources.
 
+**TypeScript** is a strict syntactical superset and compiler of JS that adds static typing to the language and is designed for the development of large applications and
+avoiding common type conversion errors. In typscript, any variable has exact type that is one of the *Boolean*, *String*, *Number*, *Array*, *Tuple*, array with fixed 
+amount but not type of input, *Enum*, set of numeric values, e. g. `enum Color { Red = 1, Green, Blue }`, *Unknown*, *Void*, *Never*, exception or undefined return,
+*Object*, *Null* or *Undefined* and *Any*. Any type is written with *:* or **type assertion**, *<>*, e. g. `let a : number` or `let object = <Object>{ }`. TS also has
+ways to create custom types via **interfaces**, e. g. `interface Props { a : number }`. Another TS feature, **Generics**, are functions that can imply polymorphism, e. g.
+`function (a: number): number { }`. TS allows to create **abstract** classes, that only meant to be extended from, and that certain fields need to be filled to create an
+instance, e. g. `abstract class Class { abstract method(): void }`.
