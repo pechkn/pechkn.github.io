@@ -59,3 +59,13 @@ Functional components for this purpose rely on, once again, hooks. There are als
 - *useLayoutEffect* is identical to useEffect, but also runs after all DOM mutations
 
 - *useDebugValue* can be used to display a label for custom hooks in React DevTools
+
+**Redux** is a immutable state container, often used with React. Global state of app represents an single object tree called **store**, and is created by
+combining **reducers**. Reducer is a function that takes store and some **action**, object with *type* string field, on input and transforms store accordingly. This
+interaction called **dispatch**. E. g. `function reducer(state, action) { action.type === 'change' && return { ...state, a: 1 } }; let store = createStore(reducer)`. 
+Program usually has some kind of initial state and multiple small reducers instead of big one for the sake of simplicity.
+
+**Mobx** is another, less popular state managing tool. It's main difference of redux is mutable state, that can be changed on-the-fly. Mobx is, in general, 
+singnificantly simpler, - it just provides data straightforward reactivity via different **observers**, e. g. `let a = Observable(0)`, and an interface to react on it
+with functions. Mobx also has built-in type system. Store with all fields and actions looks like this:
+`const Store = types.model({ a: types.number }).actions((self) => ({ changeState() { self.a = 1 }})`.
