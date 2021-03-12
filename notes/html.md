@@ -1,4 +1,5 @@
-# HTML basics
+# HTML briefly
+
 **HTML** is markup language designed to be displayed in browser. Everything in HTML document is represented in **tags** - short strings in angle brackets. **Nesting**
 tags can contain others, while **self-closing** tags can't. Any tag ends with slash symbol inside, e. g. `<p> <a> </a> </p>` or `<img />`. Most of the tags are **semantic**. That means they have some meaning and are used to describe and distinguish contents more accurately and clearly, e. g. `<article>`, while technically they aren't any different from non-semantic tags such as `<div>`.
 

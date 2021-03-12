@@ -1,3 +1,12 @@
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,20 +14,25 @@
   text-decoration: none;
   font-family: sans-serif;
   line-height: 1.5;
+  border: none;
+  outline: none;
+  background-color: none;
 }
 
 body {
-  width: 100%;
   margin: 0 auto;
   padding: 16px;
-  max-width: 840px;
+  max-width: 780px;
+  animation: fade 1.5s forwards;
 }
 
 p,
-h1,
-h2,
+h2 {
+  margin: 10px 0 5px 0;
+}
+
 h3 {
-  margin: 10px 0;
+  margin: 10px 0 -10px 0;
 }
 
 .container {
@@ -29,22 +43,19 @@ h3 {
 }
 
 .card {
-  border: 1px solid #cccccc;
+  border: 1px solid gainsboro;
   width: auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 4px;
-  max-width: 362px;
+  max-width: 352px;
   margin: 10px;
-  border-radius: 5px;
   padding: 5px 10px;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
 .preview {
-  border-radius: 5px 5px 0 0;
-  width: 382px;
-  margin: -5px -10px 12px -10px;
+  width: 350px;
+  height: 250px;
+  margin: -5px 0 10px -10px;
 }
 
 span:before {

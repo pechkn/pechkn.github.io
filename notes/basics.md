@@ -1,4 +1,4 @@
-# General concepts
+# Dev basics
 
 **Declarative programming** is a paradigm of building programs by expressing the logic of element's without describing their control flow. One type of declarative
 programming is **Functional programming (FP)**. It assumes constructing programs by applying and composing functions, mainly **pure** ones. Pure function, firstly,
