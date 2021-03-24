@@ -108,3 +108,18 @@ span:before {
   background-color: #7952b3;
   color: white;
 }
+
+.vue:before {
+  content: 'Vue';
+  background-color: #41b883;
+}
+
+.vuex:before {
+  content: 'Vuex';
+  background-color: #34495e;
+  color: white;
+}
+.sass:before {
+  content: 'SASS';
+  background-color: #c76494;
+}
