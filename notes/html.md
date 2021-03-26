@@ -16,3 +16,5 @@ page size and contents, correct headings structure and anchor links with popular
 Shadow DOM with HTML **templates** makes up a set of technologies called **Web components**. Elements in `<template>` and `<slot>` tags aren't displayed on the page
 by default and imply JS manipulation. Web components are reusable, versatile and very customizable, and most JS libraries and frameworks such as *React*, *Vue*
 or *Angular* nowadays implement them.
+
+Web-component-based client-side frameworks have probems with search engines indexation because all code on page is essentially JavaScript, not HTML. **Server-side Rendering (SSR)** solves them by rendering a client-side SPA on the server and then sending complete page to the client. This allows for dynamic components to be served as static HTML markup.
