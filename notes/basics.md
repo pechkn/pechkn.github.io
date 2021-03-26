@@ -1,3 +1,6 @@
+---
+title: Dev basics
+---
 # Dev basics
 
 **Declarative programming** is a paradigm of building programs by expressing the logic of element's without describing their control flow. One type of declarative

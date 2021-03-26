@@ -1,3 +1,7 @@
+---
+title: HTML briefly
+---
+
 # HTML briefly
 
 **HTML** is markup language designed to be displayed in browser. Everything in HTML document is represented in **tags** - short strings in angle brackets. **Nesting**

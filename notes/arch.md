@@ -1,3 +1,7 @@
+---
+title: Arch Linux guide
+---
+
 # Arch Linux guide
 
 Simple and barebones Arch Linux can be installed in few steps.

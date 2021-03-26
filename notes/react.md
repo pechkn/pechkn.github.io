@@ -1,3 +1,7 @@
+---
+title: React, Redux, Mobx
+---
+
 # React, Redux, Mobx
 
 **React** is the most popular open-source front-end JS library for building user interfaces and their components. React follows **JS-first** approach, so DOM tree is

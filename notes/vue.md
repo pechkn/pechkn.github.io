@@ -1,3 +1,7 @@
+---
+title: Vue, Vuex, Nuxt
+---
+
 # Vue, Vuex, Nuxt
 
 **Vue** is a modular progressive framework for building user interfaces. That means that it includes all neccessary parts for web app
@@ -39,7 +43,7 @@ shorthanded to _:_, _v-on_ - to _@_ etc. Standart HTML attributes also have Vue 
 `<div :style="{ color: activeColor }">`.
 
 Child component can emit an event on itself to **callback** the method of parent component by calling _$emit_ method and passing the name
-of the event: `<div v-on:click="$emit('function()')">`. Also, parent's methods can be accessed directly via *$parent* context, e. g. `$parent.function()`.
+of the event: `<div v-on:click="$emit('function()')">`. Also, parent's methods can be accessed directly via _$parent_ context, e. g. `$parent.function()`.
 
 **Transition** components allows to add entering/leaving transitions for any component, e. g.
 `<transition name="fade"><div>Text</div></transition>`. To make it work there should be CSS classes with corresponding transition name
@@ -49,8 +53,19 @@ simultaneously using transitions and watchers.
 Vue functionality can be extended via **plugins**, which are connected by calling _use_ method before creating main app object, e. g.
 `Vue.use(plugin)`.
 
-**Routing** in Vue is done by simply importing *vue-router* module and creating routes object, where key is address and value is component, e. g. `const routes = {'/': Home}`, and then inserting *<router-view>* tag in component.
+**Routing** in Vue is done by simply importing _vue-router_ module and creating routes object, where key is address and value is
+component, e. g. `const routes = {'/': Home}`, and then inserting _<router-view>_ tag in component.
 
-**Vuex**
+**Vuex** is the official library for state management in Vue. It is very similar to Mobx and partly to Redux, and consists of three main
+concepts: **state**, a global storage of all data, **mutations**, methods that alter the state, and **views**, components that access it.
+Store with state and mutations can be created by connecting corresponding plugin and creating Vuex object:
+`Vue.use(Vuex); const store = new Vuex.Store({ state: { }, mutations: { } })`. Views access store data via _$store_ context, e. g.
+`{{ $store.state.variable }}`. To call mutation, component should declare method that does corresponding _commit_ to state, e. g.
+`getVariable() { this.$store.commit('getVariable') }`. Asynchronous mutations are called **actions** and are executed by _dispatch_
+method, e. g. `this.$store.dispatch('getVaribale')`. Vuex store can also be separated on multiple modules, smaller Vuex objects, and then inserted into main object with _modules_ field, e. g. ` modules: { a: moduleA, b: moduleB }`.
 
-**Nuxt**
+As Vue is less fundamentally different from normal static JS sites than React, server-side rendering is widely applied to it.
+**Nuxt.js** is a framework to build such SSR sites. It represents a wrapper for Vue components with lots of middleware options such as
+meta tags and is compiled to HTML. Nuxt allows for creation of **document** file that consists of standart HTML code including head and applied to entire app. One of the features is **layouts**, custom sets of CSS and script rules that can be applied to
+multiple components to customize their looks. Layout is a _.vue_ file in _layouts/_ folder of project that has _<template>_ tag inside.
+SSR requires Nuxt to be running on Node server and app's components to match criterias, such as strictly following lifecycle, correct usage of anchor links and navigating between pages with _<NuxtLink>_ component.

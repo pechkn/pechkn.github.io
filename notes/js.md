@@ -1,3 +1,7 @@
+---
+title: All JS concepts
+---
+
 # All JS concepts
 
 **JavaScript (JS)** is high-level, dynamic-types, just-in-time compiled and multi-paradigm scripting programming language. It is one of the core components of web,

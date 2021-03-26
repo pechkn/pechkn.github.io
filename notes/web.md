@@ -1,3 +1,7 @@
+---
+title: How web works
+---
+
 # How web works
 *Internet* is the global system of connected computer networks. Basically, it can be put another way: computers of global network are servers, and files they hold
 are websites.
@@ -76,7 +80,7 @@ centers. The goal is to provide high availability and performance by distributin
 **Denial-of-service (DoS)** attacks, when servers are flooded with superfluous requests in attempt to overload systems and prevent legitimate requests from being
 fulfilled.
 
-As web apps increase in size in complexity, they begin to replace traditional mobile or even desktop apps. This approach is called **Progressive Web App (PWA)** and
+As web apps increase in size and complexity, they begin to replace traditional mobile or even desktop apps. This approach is called **Progressive Web App (PWA)** and
 such apps must implement following features: HTTPS, **service worker** and a **manifest**. Service worker is a script that controls handling network requests and
 asset caching. It can make web page faster and even work offline. Manifest is JSON file that controls how app appears to the user: describes the name of the app,
 the start URL, icons etc, much like mobile app's manifest.
