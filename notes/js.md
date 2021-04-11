@@ -66,3 +66,8 @@ on an element, it first runs the handlers on it then all the way up on other anc
 DOM trees can be separated from other, hidden and appended to other parts of DOM. **Shadow DOM** API makes use of this and provides _attachShadow_ function. Shadow DOM
 trees can be accessed from outer JS code, if they are attached in _open mode_, and can't be if in _close mode_. E. g.
 `var shadow = element.attachShadow({mode: 'open'})`.
+
+**Currying** is an advanced technique that transforms a function from callable with multiple arguments, e. g. `function(a, b)`
+to multiple sequential calls, e. g. `function(a)(b)`. It is used to separate functions by input data and get partials that
+implement only part of their functionality and is done via recursive wrapper function, e. g. 
+`function curry(f) { return function(a) { return function(b) { return f(a, b) } } } `.
