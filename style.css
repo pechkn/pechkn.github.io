@@ -127,7 +127,14 @@ span:before {
   background-color: #34495e;
   color: white;
 }
+
 .sass:before {
   content: 'SASS';
   background-color: #c76494;
+}
+
+.next:before {
+  content: 'Next.js';
+  color: white;
+  background-color: black;
 }
