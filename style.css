@@ -1,9 +1,18 @@
+[lang='ru'],
+html[lang='ru-RU'] [lang='en'] {
+  display: none;
+}
+
+html[lang='ru-RU'] [lang='ru'] {
+  display: block;
+}
+
 :root {
-  color-scheme: light dark;
   --fg-color: #24292e;
   --border-color: gainsboro;
   --bg-color: white;
 }
+
 @media (prefers-color-scheme: dark) {
   :root {
     --fg-color: #ddd;
@@ -78,12 +87,6 @@ p {
   width: 350px;
   height: 250px;
   margin: -5px 0 10px -10px;
-}
-
-footer {
-  text-align: center;
-  font-style: italic;
-  margin-top: 20px;
 }
 
 span:before {
