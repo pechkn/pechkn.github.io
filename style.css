@@ -1,9 +1,9 @@
-[lang='ru'],
-html[lang='ru-RU'] [lang='en'] {
+:not(html[lang*='ru']) [lang='ru'],
+html[lang*='ru'] [lang='en'] {
   display: none;
 }
 
-html[lang='ru-RU'] [lang='ru'] {
+html[lang*='ru'] [lang='ru'] {
   display: block;
 }
 
@@ -52,8 +52,7 @@ html[lang='ru-RU'] [lang='ru'] {
   border: none;
   outline: none;
   background-color: transparent;
-  transition: background 1s;
-  transition: all 1s linear;
+  transition: all 0.5s linear;
 }
 
 body {
