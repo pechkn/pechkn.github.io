@@ -18,6 +18,11 @@ changes of files in directory, managing repositories and branches with different
 To preserve and backup all VCS information, it is often hosted on servers. **GitHub** is the most widely used free hosting for Git repositories, as well as Gitlab and
 Bitbucket. Both offline and online Git tools are neccessary for any developer's career.
 
+There are many different **testing** and **deployment** tools like **Jest**. It is a JS framework for writing tests with focus on
+simplicity to ensure correctness of any codebase. For example, to test any _module_, there should be file called _module.test.js_,
+and the simplest expectation test uses _expect_ and _toBe_ keywords and looks like this: 
+`test('1 + 2 is equal 3', () => { expect(sum(1, 2)).toBe(3) })`.
+
 **Webpack** is an open-source JS module bundler that transforms front-end assets such as HTML, CSS, and images if the corresponding loaders are included and generates
 static assets representing those modules with dependencies. It's config represents JS module with exports and rules for sources, e. g. `const cssRegex = /\.css$/`,
 `mode: isEnvProduction ? 'production' : isEnvDevelopment && 'development'`. Most web apps nowadays use webpack to compress and control included resources.
