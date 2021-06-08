@@ -121,7 +121,7 @@ span:before {
 
 .html:before {
   content: 'HTML';
-  background-color: #e44b23;
+  background-color: #e96228;
 }
 
 .css:before {
@@ -184,4 +184,9 @@ span:before {
   content: 'Next.js';
   color: white;
   background-color: black;
+}
+
+.postcss:before {
+  content: 'PostCSS';
+  background-color: #dd3a0a;
 }
