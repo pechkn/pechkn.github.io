@@ -190,3 +190,8 @@ span:before {
   content: 'PostCSS';
   background-color: #dd3a0a;
 }
+
+.gulp:before {
+  content: 'Gulp';
+  background-color: #d34446;
+}
