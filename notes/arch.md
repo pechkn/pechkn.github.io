@@ -91,24 +91,34 @@ exit
 
 ---
 
-7. Install and configure packages. I usually do at least following commands:
+7. Install and configure packages. I personally execute those commands:
 
 ```
-pacman -S networkmanager neovim sudo tlp git xorg-xinit xorg-xset alacritty npm nodejs code firefox rsync
-systemctl enable NetworkManager
+pacman -S iwd neovim sudo tlp git xorg-xinit xorg-xset xorg-xserver xorg-xbacklight xorg-xrandr xf86-video-intel pulseaudio telegram alacritty npm nodejs code rsync spectrwm scrot ttf-roboto ttf-roboto-mono firefox
 systemctl enable tlp
 echo '%wheel ALL=(ALL) ALL' >> /etc/sudoers
 git clone https://github.com/infret/dotfiles
 rsync -a dotfiles/ .
 ```
 
-Most of my configs are fetched from GitHub, so I usually care only about one system file,
+Most of my configs are fetched from GitHub, so I care only about two system files,
 /etc/systemd/system/getty@tty1.service.d/override.conf
 
 ```
 [Service]
 ExecStart=
 ExecStart=-/usr/bin/agetty --autologin user --noclear %I $TERM
+```
+
+...and,
+/etc/X11/xorg.conf.d/20-intel.conf
+
+```
+Section "Device"
+   Identifier  "Intel Graphics"
+   Driver      "intel"
+   Option      "TearFree"    "true"
+EndSection
 ```
 
 ---
