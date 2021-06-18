@@ -47,8 +47,9 @@ html[lang*='ru'] [lang='ru'] {
   padding: 0;
   color: var(--fg-color);
   text-decoration: none;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', Helvetica, Arial, sans-serif;
   line-height: 1.5;
+  font-weight: 200;
   border: none;
   outline: none;
   background-color: transparent;
@@ -59,9 +60,7 @@ body {
   margin: 32px auto;
   padding: 16px;
   animation: fade 1.5s forwards;
-  font-size: 16px;
   max-width: 1000px;
-  word-wrap: break-word;
   background-color: var(--bg-color);
 }
 
@@ -69,18 +68,21 @@ h1,
 h2,
 h3,
 h4 {
-  margin: 16px 0 4px 0;
+  margin: 12px 0 4px 0;
   font-weight: 600;
   line-height: 1.25;
 }
 
-p {
-  margin-top: 0;
-  margin-bottom: 16px;
-}
-
 button {
   cursor: pointer;
+}
+
+a {
+  color: #006fe6;
+}
+
+p {
+  font-size: 15px;
 }
 
 header {
@@ -100,8 +102,8 @@ header {
   border: 1px solid var(--border-color);
   width: auto;
   max-width: 352px;
-  margin: 10px;
-  padding: 5px 10px;
+  margin: 8px;
+  padding: 4px 8px;
   box-sizing: border-box;
   font-size: 16px;
 }
@@ -109,13 +111,13 @@ header {
 .preview {
   width: 350px;
   height: 250px;
-  margin: -5px 0 10px -10px;
+  margin: -4px 0 8px -8px;
 }
 
 span:before {
-  margin-right: 5px;
-  border-radius: 10px;
-  padding: 4px 10px 6px 10px;
+  margin-right: 4px;
+  border-radius: 8px;
+  padding: 4px 8px;
   color: black;
 }
 
