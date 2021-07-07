@@ -15,14 +15,14 @@ html[lang*='ru'] [lang='ru'] {
 }
 
 [data-theme='dark'] {
-  --fg-color: #ddd;
+  --fg-color: white;
   --border-color: #555;
   --bg-color: #222;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --fg-color: #ddd;
+    --fg-color: white;
     --border-color: #555;
     --bg-color: #222;
   }
@@ -46,14 +46,13 @@ html[lang*='ru'] [lang='ru'] {
   margin: 0;
   padding: 0;
   color: var(--fg-color);
-  text-decoration: none;
   font-family: -apple-system, BlinkMacSystemFont, 'Roboto', Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 200;
   border: none;
   outline: none;
   background-color: transparent;
   transition: all 0.5s linear;
+  text-decoration: none;
 }
 
 body {
@@ -68,9 +67,8 @@ h1,
 h2,
 h3,
 h4 {
-  margin: 12px 0 4px 0;
+  margin: 10px 0 5px 0;
   font-weight: 600;
-  line-height: 1.25;
 }
 
 button {
@@ -78,11 +76,7 @@ button {
 }
 
 a {
-  color: #006fe6;
-}
-
-p {
-  font-size: 15px;
+  color: #18f;
 }
 
 header {
@@ -91,19 +85,19 @@ header {
   justify-content: space-between;
 }
 
-.container {
+main {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 10px;
 }
 
 .card {
   border: 1px solid var(--border-color);
-  width: auto;
   max-width: 352px;
-  margin: 8px;
-  padding: 4px 8px;
+  margin: 10px;
+  padding: 5px 10px;
   box-sizing: border-box;
   font-size: 16px;
 }
@@ -111,13 +105,13 @@ header {
 .preview {
   width: 350px;
   height: 250px;
-  margin: -4px 0 8px -8px;
+  margin: -5px 0 10px -10px;
 }
 
 span:before {
-  margin-right: 4px;
-  border-radius: 8px;
-  padding: 4px 8px;
+  margin-right: 5px;
+  border-radius: 10px;
+  padding: 5px 10px;
   color: black;
 }
 
@@ -186,14 +180,4 @@ span:before {
   content: 'Next.js';
   color: white;
   background-color: black;
-}
-
-.postcss:before {
-  content: 'PostCSS';
-  background-color: #dd3a0a;
-}
-
-.gulp:before {
-  content: 'Gulp';
-  background-color: #d34446;
 }
