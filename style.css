@@ -53,6 +53,7 @@ html[lang*='ru'] [lang='ru'] {
   background-color: transparent;
   transition: all 0.5s linear;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 h1,
@@ -65,6 +66,7 @@ h4 {
 
 button {
   cursor: pointer;
+  padding-bottom: 5px;
 }
 
 a {
@@ -72,53 +74,45 @@ a {
 }
 
 body {
-  margin: 32px auto;
+  margin: 30px auto;
   animation: fade 1.5s forwards;
   max-width: 1000px;
   background-color: var(--bg-color);
   display: flex;
-  flex-wrap: wrap;
-  position: relative;
+  flex-direction: column;
 }
 
 main {
-  min-width: 440px;
-  max-width: 550px;
-  width: 60vw;
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: fixed;
-  margin: 16px;
+  padding: 10px;
 }
 
 header {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
 aside {
-  min-width: 320px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 320px);
   justify-content: center;
-  margin: 20vh 0 0 58%;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 .card {
   border: 1px solid var(--border-color);
-  max-width: 352px;
-  margin: 24px 16px;
+  width: 320px;
   padding: 5px 10px;
   box-sizing: border-box;
-  font-size: 16px;
+  scroll-snap-align: center;
+  flex: none;
 }
 
 .preview {
-  width: 350px;
-  height: 240px;
+  width: 318px;
+  height: 210px;
   margin: -5px 0 10px -10px;
 }
 
