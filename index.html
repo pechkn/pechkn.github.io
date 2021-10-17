@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="script.js"></script>
   <link rel="stylesheet" href="style.css" />
   <title lang="en">Vlad Pechkin</title>
+  <title lang="ru">Влад Печкин</title>
 </head>
 <body>
   <main>
     <header>
-      <h1 lang="en">Hello. I'm Vladislav Pechkin.</h1>
-      <h1 lang="ru">Приветствую. Я - Владислав Печкин.</h1>
+      <h1 lang="en">Hello. I'm Vlad Pechkin.</h1>
+      <h1 lang="ru">Приветствую. Я - Влад Печкин.</h1>
       <div>
         <button onClick="toggleLang()">
           <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 24 24" width="30px" fill="var(--fg-color)"
@@ -34,7 +36,7 @@
       Front-end developer, simple in life and efficient in work lover of everything related to programming,
       a graduate of the Samsung IT Academy with a degree in Android development and
       an advanced level English speaker who has many projects and a desire to create even more.
-      <a href="">My resume</a>, <a href="https://gitlab.com/pechkindev">code on GitLab</a>, 
+      <a href="resume.html">My resume</a>, <a href="https://gitlab.com/pechkindev">code on GitLab</a>, 
       <a href="mailto:mail@pechkin.dev">Email</a>, <a href="t.me/pechkindev">Telegram</a>,
       <a href="notes.md">knowledge database</a>. Below you can see my portfolio.
     </p>
@@ -42,7 +44,7 @@
       Front-end разработчик, простой в жизни и эффективный в работе любитель всего, что связано с
       программированием, выпускник IT-академии Samsung по специальности «Android-разработка», знающий
       английский язык на продвинутом уровне и имеющий множество проектов и желание создавать еще больше.
-      <a href="https://samara.hh.ru/resume/7ec63c46ff08c92f880039ed1f336866673965">Мое резюме</a>, <a href="https://gitlab.com/pechkindev">код на GitLab</a>, 
+      <a href="resume.html">Мое резюме</a>, <a href="https://gitlab.com/pechkindev">код на GitLab</a>, 
       <a href="mailto:mail@pechkin.dev">Почта</a>, <a href="t.me/pechkindev">Telegram</a>,
       <a href="notes.md">база знаний</a>. Ниже находится мое портфолио.
     </p>
@@ -87,6 +89,14 @@
       <span class="react" />
       <span class="mobx" />
     </a>
+    <a class="card" target="_blank" href="vue-messenger">
+      <img class="preview" src="res/vue-messenger.webp" alt="Site preview" />
+      <h3 lang="en">Vue Messenger</h3>
+      <h3 lang="ru">Мессенджер</h3>
+      <span class="vue" />
+      <span class="vuex" />
+      <span class="sass" />
+    </a>
     <a class="card" target="_blank" href="book-store">
       <img class="preview" src="res/book-store.webp" alt="Site preview" />
       <h3 lang="en">Book store</h3>
@@ -103,14 +113,6 @@
       <span class="react" />
       <span class="bootstrap" />
     </a>
-    <a class="card" target="_blank" href="vue-messenger">
-      <img class="preview" src="res/vue-messenger.webp" alt="Site preview" />
-      <h3 lang="en">Vue Messenger</h3>
-      <h3 lang="ru">Мессенджер</h3>
-      <span class="vue" />
-      <span class="vuex" />
-      <span class="sass" />
-    </a>
     <a class="card" target="_blank" href="eye-trainer">
       <img class="preview" src="res/eye-trainer.webp" alt="Site preview" />
       <h3 lang="en">Eye trainer</h3>
@@ -123,19 +125,3 @@
   </section>
 </body>
 </html>
-<script>
-  document.documentElement.lang = navigator.language
-  if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    document.documentElement.setAttribute('data-theme', 'dark')
-  }
-  function toggleLang() {
-    if (document.documentElement.lang === 'ru-RU') {
-      document.documentElement.lang = 'en'
-    } else document.documentElement.lang = 'ru-RU'
-  }
-  function toggleTheme() {
-    if (document.documentElement.getAttribute('data-theme') === 'dark') {
-      document.documentElement.setAttribute('data-theme', 'light')
-    } else document.documentElement.setAttribute('data-theme', 'dark')
-  }
-</script>
