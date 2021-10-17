@@ -33,15 +33,6 @@ html[lang*='ru'] [lang='ru'] {
   }
 }
 
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -50,7 +41,6 @@ html[lang*='ru'] [lang='ru'] {
   border: none;
   outline: none;
   background-color: transparent;
-  transition: 0.5s linear;
   box-sizing: border-box;
   line-height: 1.5;
 }
@@ -58,7 +48,6 @@ html[lang*='ru'] [lang='ru'] {
 body {
   margin: 0 auto;
   padding: 15px;
-  animation: fade 1.5s;
   max-width: 1000px;
   background-color: var(--bg-color);
   display: flex;
