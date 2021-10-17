@@ -47,41 +47,22 @@ html[lang*='ru'] [lang='ru'] {
   padding: 0;
   color: var(--fg-color);
   font-family: -apple-system, BlinkMacSystemFont, 'Roboto', Helvetica, Arial, sans-serif;
-  line-height: 1.5;
   border: none;
   outline: none;
   background-color: transparent;
   transition: all 0.5s linear;
   box-sizing: border-box;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  margin-top: 10px;
-}
-
-button {
-  cursor: pointer;
-  padding-bottom: 5px;
-}
-
-a {
-  color: #18f;
+  line-height: 1;
 }
 
 body {
-  margin: 30px auto;
+  margin: 0 auto;
+  padding: 15px;
   animation: fade 1.5s forwards;
   max-width: 1000px;
   background-color: var(--bg-color);
   display: flex;
   flex-direction: column;
-}
-
-main {
-  padding: 10px;
 }
 
 header {
@@ -101,8 +82,8 @@ aside {
 
 .card {
   border: 1px solid var(--border-color);
-  width: 320px;
-  padding: 5px 10px;
+  width: 100%;
+  padding: 15px 15px 20px 15px;
   box-sizing: border-box;
   scroll-snap-align: center;
   flex: none;
@@ -112,26 +93,29 @@ aside {
 .preview {
   width: 318px;
   height: 210px;
-  margin: -5px 0 6px -10px;
+  margin: -15px 0 0 -15px;
+  border-bottom: 1px solid var(--border-color);
 }
 
-@media only screen and (max-width: 1000px) {
-  main {
-    width: 100%;
-    height: auto;
-    position: initial;
-    max-width: unset;
-  }
-  aside {
-    width: 100%;
-    height: auto;
-    margin: 16px 0 0 0;
-  }
+p {
+  line-height: 1.5;
+}
+
+a {
+  color: #18f;
+}
+
+h1 {
+  margin: 5px 0 10px 0;
+}
+
+h3 {
+  margin: 10px 0 15px 0;
 }
 
 span:before {
   margin-right: 5px;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 5px 10px;
   color: black;
 }
