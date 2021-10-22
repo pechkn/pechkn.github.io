@@ -1,128 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="script.js"></script>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
-  <title lang="en">Vlad Pechkin</title>
-  <title lang="ru">Влад Печкин</title>
-</head>
-<body>
-  <main>
-    <header>
-      <h1 lang="en">Hello. I'm Vlad Pechkin.</h1>
-      <h1 lang="ru">Приветствую. Я - Влад Печкин.</h1>
-      <div>
-        <button onClick="toggleLang()">
-          <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 24 24" width="30px" fill="var(--fg-color)"
-            aria-label="Change site language">
-            <path d="M0 0h24v24H0V0z" fill="none" />
-            <path
-              d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z" />
-          </svg>
-        </button>
-        <button onClick="toggleTheme()">
-          <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="30px" viewBox="0 0 24 24"
-            width="30px" fill="var(--fg-color)" aria-label="Change site theme">
-            <rect fill="none" height="24" width="24" />
-            <path
-              d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z" />
-          </svg>
-        </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <title lang="en">Vlad Pechkin</title>
+    <title lang="ru">Влад Печкин</title>
+  </head>
+  <body>
+    <section>
+      <header>
+        <h1 lang="en">Hello. I'm Vlad Pechkin.</h1>
+        <h1 lang="ru">Приветствую. Я - Влад Печкин.</h1>
+        <div>
+          <button onClick="toggleLang()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="30px"
+              viewBox="0 0 24 24"
+              width="30px"
+              fill="var(--fg-color)"
+              aria-label="Change site language"
+            >
+              <path d="M0 0h24v24H0V0z" fill="none" />
+              <path
+                d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"
+              />
+            </svg>
+          </button>
+          <button onClick="toggleTheme()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              enable-background="new 0 0 24 24"
+              height="30px"
+              viewBox="0 0 24 24"
+              width="30px"
+              fill="var(--fg-color)"
+              aria-label="Change site theme"
+            >
+              <rect fill="none" height="24" width="24" />
+              <path
+                d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"
+              />
+            </svg>
+          </button>
+        </div>
+      </header>
+      <p lang="en">
+        Front-end developer, simple in life and efficient in work lover of
+        everything related to programming, a graduate of the Samsung IT Academy
+        with a degree in Android development and an advanced level English
+        speaker who has many projects and a desire to create even more.
+        <a href="resume.html">My resume</a>,
+        <a href="https://gitlab.com/pechkindev">code on GitLab</a>,
+        <a href="mailto:mail@pechkin.dev">Email</a>,
+        <a href="t.me/pechkindev">Telegram</a>,
+        <a href="notes.md">knowledge database</a>. Below you can see my
+        portfolio.
+      </p>
+      <p lang="ru">
+        Front-end разработчик, простой в жизни и эффективный в работе любитель
+        всего, что связано с программированием, выпускник IT-академии Samsung по
+        специальности «Android-разработка», знающий английский язык на
+        продвинутом уровне и имеющий множество проектов и желание создавать еще
+        больше.
+        <a href="resume.html">Мое резюме</a>,
+        <a href="https://gitlab.com/pechkindev">код на GitLab</a>,
+        <a href="mailto:mail@pechkin.dev">Почта</a>,
+        <a href="t.me/pechkindev">Telegram</a>,
+        <a href="notes.md">база знаний</a>. Ниже находится мое портфолио.
+      </p>
+    </section>
+    <section>
+      <div class="items">
+        <a class="card" target="_blank" href="https://2035school.ru">
+          <img
+            class="card__preview"
+            src="res/open-school.webp"
+            alt="Site preview"
+          />
+          <div class="card__body">
+            <h3 lang="en">«Open School»</h3>
+            <h3 lang="ru">«Открытая школа»</h3>
+            <span class="vue"></span>
+            <span class="vuex"></span>
+            <span class="less"></span>
+          </div>
+        </a>
+        <a class="card" target="_blank" href="http://содд.рф">
+          <img
+            class="card__preview"
+            src="res/dars-landing.webp"
+            alt="Site preview"
+          />
+          <div class="card__body">
+            <h3 lang="en">«DARS» landing</h3>
+            <h3 lang="ru">Лэндинг «СОДД»</h3>
+            <span class="html"></span>
+            <span class="css"></span>
+          </div>
+        </a>
+        <a class="card" target="_blank" href="http://tltsu-pro.space">
+          <img
+            class="card__preview"
+            src="res/tltsu-library.webp"
+            alt="Site preview"
+          />
+          <div class="card__body">
+            <h3 lang="en">TSU projects library</h3>
+            <h3 lang="ru">Библиотека проектов ТГУ</h3>
+            <span class="html"></span>
+            <span class="css"></span>
+            <span class="js"></span>
+          </div>
+        </a>
+        <a class="card" target="_blank" href="internet-magazine">
+          <img
+            class="card__preview"
+            src="res/internet-magazine.webp"
+            alt="Site preview"
+          />
+          <div class="card__body">
+            <h3 lang="en">Internet Magazine</h3>
+            <h3 lang="ru">Интернет-журнал</h3>
+            <span class="html"></span>
+            <span class="css"></span>
+            <span class="js"></span>
+          </div>
+        </a>
+        <a class="card" target="_blank" href="social-network">
+          <img
+            class="card__preview"
+            src="res/social-network.webp"
+            alt="Site preview"
+          />
+          <div class="card__body">
+            <h3 lang="en">Social Network</h3>
+            <h3 lang="ru">Социальная Сеть</h3>
+            <span class="ts"></span>
+            <span class="react"></span>
+            <span class="mobx"></span>
+          </div>
+        </a>
+        <a class="card" target="_blank" href="vue-messenger">
+          <img
+            class="card__preview"
+            src="res/vue-messenger.webp"
+            alt="Site preview"
+          />
+          <div class="card__body">
+            <h3 lang="en">Vue Messenger</h3>
+            <h3 lang="ru">Мессенджер</h3>
+            <span class="vue"></span>
+            <span class="vuex"></span>
+            <span class="sass"></span>
+          </div>
+        </a>
+        <a class="card" target="_blank" href="book-store">
+          <img
+            class="card__preview"
+            src="res/book-store.webp"
+            alt="Site preview"
+          />
+          <div class="card__body">
+            <h3 lang="en">Book store</h3>
+            <h3 lang="ru">Книжный Магазин</h3>
+            <span class="ts"></span>
+            <span class="react"></span>
+            <span class="redux"></span>
+          </div>
+        </a>
+        <a class="card" target="_blank" href="eye-trainer">
+          <img
+            class="card__preview"
+            src="res/eye-trainer.webp"
+            alt="Site preview"
+          />
+          <div class="card__body">
+            <h3 lang="en">Eye trainer</h3>
+            <h3 lang="ru">Тренажер зрения</h3>
+            <span class="ts"></span>
+            <span class="next"></span>
+            <span class="redux"></span>
+          </div>
+        </a>
       </div>
-    </header>
-    <p lang="en">
-      Front-end developer, simple in life and efficient in work lover of everything related to programming,
-      a graduate of the Samsung IT Academy with a degree in Android development and
-      an advanced level English speaker who has many projects and a desire to create even more.
-      <a href="resume.html">My resume</a>, <a href="https://gitlab.com/pechkindev">code on GitLab</a>, 
-      <a href="mailto:mail@pechkin.dev">Email</a>, <a href="t.me/pechkindev">Telegram</a>,
-      <a href="notes.md">knowledge database</a>. Below you can see my portfolio.
-    </p>
-    <p lang="ru">
-      Front-end разработчик, простой в жизни и эффективный в работе любитель всего, что связано с
-      программированием, выпускник IT-академии Samsung по специальности «Android-разработка», знающий
-      английский язык на продвинутом уровне и имеющий множество проектов и желание создавать еще больше.
-      <a href="resume.html">Мое резюме</a>, <a href="https://gitlab.com/pechkindev">код на GitLab</a>, 
-      <a href="mailto:mail@pechkin.dev">Почта</a>, <a href="t.me/pechkindev">Telegram</a>,
-      <a href="notes.md">база знаний</a>. Ниже находится мое портфолио.
-    </p>
-  </main>
-  <aside>
-    <a class="card" target="_blank" href="https://2035school.ru">
-      <img class="preview" src="res/open-school.webp" alt="Site preview" />
-      <h3 lang="en">«Open School»</h3>
-      <h3 lang="ru">«Открытая школа»</h3>
-      <span class="vue" />
-      <span class="vuex" />
-      <span class="less" />
-    </a>
-    <a class="card" target="_blank" href="http://содд.рф">
-      <img class="preview" src="res/dars-landing.webp" alt="Site preview" />
-      <h3 lang="en">«DARS» landing</h3>
-      <h3 lang="ru">Лэндинг «СОДД»</h3>
-      <span class="html" />
-      <span class="css" />
-    </a>
-    <a class="card" target="_blank" href="http://tltsu-pro.space">
-      <img class="preview" src="res/tltsu-library.webp" alt="Site preview" />
-      <h3 lang="en">TSU projects library</h3>
-      <h3 lang="ru">Библиотека проектов ТГУ</h3>
-      <span class="html" />
-      <span class="css" />
-      <span class="js" />
-    </a>
-    <a class="card" target="_blank" href="internet-magazine">
-      <img class="preview" src="res/internet-magazine.webp" alt="Site preview" />
-      <h3 lang="en">Internet Magazine</h3>
-      <h3 lang="ru">Интернет-журнал</h3>
-      <span class="html" />
-      <span class="css" />
-      <span class="js" />
-    </a>
-    <a class="card" target="_blank" href="social-network">
-      <img class="preview" src="res/social-network.webp" alt="Site preview" />
-      <h3 lang="en">Social Network</h3>
-      <h3 lang="ru">Социальная Сеть</h3>
-      <span class="ts" />
-      <span class="react" />
-      <span class="mobx" />
-    </a>
-    <a class="card" target="_blank" href="vue-messenger">
-      <img class="preview" src="res/vue-messenger.webp" alt="Site preview" />
-      <h3 lang="en">Vue Messenger</h3>
-      <h3 lang="ru">Мессенджер</h3>
-      <span class="vue" />
-      <span class="vuex" />
-      <span class="sass" />
-    </a>
-    <a class="card" target="_blank" href="book-store">
-      <img class="preview" src="res/book-store.webp" alt="Site preview" />
-      <h3 lang="en">Book store</h3>
-      <h3 lang="ru">Книжный Магазин</h3>
-      <span class="ts" />
-      <span class="react" />
-      <span class="redux" />
-    </a>
-    <a class="card" target="_blank" href="job-finder">
-      <img class="preview" src="res/job-finder.webp" alt="Site preview" />
-      <h3 lang="en">Job Finder</h3>
-      <h3 lang="ru">Поисковик Работы</h3>
-      <span class="js" />
-      <span class="react" />
-      <span class="bootstrap" />
-    </a>
-    <a class="card" target="_blank" href="eye-trainer">
-      <img class="preview" src="res/eye-trainer.webp" alt="Site preview" />
-      <h3 lang="en">Eye trainer</h3>
-      <h3 lang="ru">Тренажер зрения</h3>
-      <span class="ts" />
-      <span class="next" />
-      <span class="redux" />
-    </a>
-  </aside>
-  </section>
-</body>
+    </section>
+  </body>
 </html>
