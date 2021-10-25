@@ -11,68 +11,72 @@
   </head>
   <body>
     <section>
-      <header>
-        <h1 lang="en">Hello. I'm Vlad Pechkin.</h1>
-        <h1 lang="ru">Приветствую. Я - Влад Печкин.</h1>
-        <div>
-          <button onClick="toggleLang()">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="30px"
-              viewBox="0 0 24 24"
-              width="30px"
-              fill="var(--fg-color)"
-              aria-label="Change site language"
-            >
-              <path d="M0 0h24v24H0V0z" fill="none" />
-              <path
-                d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"
-              />
-            </svg>
-          </button>
-          <button onClick="toggleTheme()">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              enable-background="new 0 0 24 24"
-              height="30px"
-              viewBox="0 0 24 24"
-              width="30px"
-              fill="var(--fg-color)"
-              aria-label="Change site theme"
-            >
-              <rect fill="none" height="24" width="24" />
-              <path
-                d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"
-              />
-            </svg>
-          </button>
-        </div>
-      </header>
+      <h1 lang="en">Hello. I'm Vlad Pechkin.</h1>
+      <h1 lang="ru">Приветствую. Я - Влад Печкин.</h1>
+      <div class="flex">
+        <p lang="en"><b>Front-end developer</b></p>
+        <p lang="ru"><b>Front-end разработчик</b></p>
+        <p lang="en" class="dim">Togliatti, Russia</p>
+        <p lang="ru" class="dim">Тольятти, Россия</p>
+        <p lang="en" class="dim">18 years old</p>
+        <p lang="ru" class="dim">18 лет</p>
+      </div>
+      <div class="flex">
+        <p lang="en"><a href="mailto:mail@pechkin.dev">Mail</a></p>
+        <p lang="ru"><a href="mailto:mail@pechkin.dev">Почта</a></p>
+        <p lang="en">
+          <a href="https://gitlab.com/pechkindev">Code on GitLab</a>
+        </p>
+        <p lang="ru">
+          <a href="https://gitlab.com/pechkindev">Код на GitLab</a>
+        </p>
+        <p><a href="https://t.me/pechkindev">Telegram</a></p>
+        <p lang="en"><a onclick="toggleTheme()">Switch theme</a></p>
+        <p lang="ru"><a onclick="toggleTheme()">Переключить тему</a></p>
+        <p lang="en"><a onclick="toggleLang()">Русский язык</a></p>
+        <p lang="ru"><a onclick="toggleLang()">Switch to english</a></p>
+      </div>
+      <div class="flex"></div>
       <p lang="en">
-        Front-end developer, simple in life and efficient in work lover of
-        everything related to programming, a graduate of the Samsung IT Academy
-        with a degree in Android development and an advanced level English
-        speaker who has many projects and a desire to create even more.
-        <a href="resume.html">My resume</a>,
-        <a href="https://gitlab.com/pechkindev">code on GitLab</a>,
-        <a href="mailto:mail@pechkin.dev">Email</a>,
-        <a href="https://t.me/pechkindev">Telegram</a>, 
-        <a href="notes.html">notes</a>. Below you can see my portfolio.
+        Simple in life and efficient in work lover of everything related to
+        programming, a graduate of the Samsung IT Academy with a degree in
+        Android development and an advanced level English speaker who has many
+        projects and a desire to create even more.
       </p>
       <p lang="ru">
-        Front-end разработчик, простой в жизни и эффективный в работе любитель
-        всего, что связано с программированием, выпускник IT-академии Samsung по
-        специальности «Android-разработка», знающий английский язык на
-        продвинутом уровне и имеющий множество проектов и желание создавать еще
-        больше.
-        <a href="resume.html">Мое резюме</a>,
-        <a href="https://gitlab.com/pechkindev">код на GitLab</a>,
-        <a href="mailto:mail@pechkin.dev">Почта</a>,
-        <a href="https://t.me/pechkindev">Telegram</a>,
-        <a href="notes.html">заметки</a>. Ниже находится мое портфолио.
+        Простой по жизни и эффективный в работе любитель всего, что связано с
+        программированием, выпускник IT-академии Samsung по специальности
+        «Android-разработка», знающий английский язык на продвинутом уровне и
+        имеющий множество проектов, а также желание создавать еще больше.
       </p>
     </section>
     <section>
+      <h2 lang="en">Skills</h2>
+      <h2 lang="ru">Навыки</h2>
+      <div class="flex">
+        <div class="tag html">HTML</div>
+        <div class="tag css">CSS</div>
+        <div class="tag sass">SASS</div>
+        <div class="tag less">Less.js</div>
+        <div class="tag js">JavaScript</div>
+        <div class="tag ts">TypeScript</div>
+        <div class="tag react">React</div>
+        <div class="tag vue">Vue</div>
+        <div class="tag angular">Angular</div>
+        <div class="tag redux">Redux</div>
+        <div class="tag mobx">Mobx</div>
+        <div class="tag vuex">Vuex</div>
+        <div class="tag node">Node.js</div>
+        <div class="tag electron">Electron</div>
+        <div class="tag linux">Linux</div>
+        <div class="tag bash">Bash</div>
+        <div class="tag git">Git</div>
+        <div class="tag mongo">MongoDB</div>
+      </div>
+    </section>
+    <section>
+      <h2 lang="en">Portfolio</h2>
+      <h2 lang="ru">Портфолио</h2>
       <div class="items">
         <a class="card" target="_blank" href="https://2035school.ru">
           <img
@@ -82,9 +86,11 @@
           />
           <div class="card__body">
             <h3>2035school.ru</h3>
-            <span class="vue"></span>
-            <span class="vuex"></span>
-            <span class="less"></span>
+            <div class="flex">
+              <div class="tag vue">Vue</div>
+              <div class="tag vuex">Vuex</div>
+              <div class="tag less">Less.js</div>
+            </div>
           </div>
         </a>
         <a class="card" target="_blank" href="http://fin-monitoring.com">
@@ -95,9 +101,11 @@
           />
           <div class="card__body">
             <h3>fin-monitoring.com</h3>
-            <span class="ts"></span>
-            <span class="react"></span>
-            <span class="mobx"></span>
+            <div class="flex">
+              <div class="tag ts">TypeScript</div>
+              <div class="tag react">React</div>
+              <div class="tag mobx">Mobx</div>
+            </div>
           </div>
         </a>
         <a class="card" target="_blank" href="http://chargeback-law.ru">
@@ -108,9 +116,11 @@
           />
           <div class="card__body">
             <h3>chargeback-law.ru</h3>
-            <span class="html"></span>
-            <span class="sass"></span>
-            <span class="node"></span>
+            <div class="flex">
+              <div class="tag html">HTML</div>
+              <div class="tag sass">SASS</div>
+              <div class="tag node">Node.js</div>
+            </div>
           </div>
         </a>
         <a class="card" target="_blank" href="https://retreat-practicum.ru">
@@ -121,9 +131,11 @@
           />
           <div class="card__body">
             <h3>retreat-practicum.ru</h3>
-            <span class="html"></span>
-            <span class="css"></span>
-            <span class="js"></span>
+            <div class="flex">
+              <div class="tag html">HTML</div>
+              <div class="tag css">CSS</div>
+              <div class="tag js">JavaScript</div>
+            </div>
           </div>
         </a>
         <a class="card" target="_blank" href="http://содд.рф">
@@ -134,8 +146,10 @@
           />
           <div class="card__body">
             <h3>содд.рф</h3>
-            <span class="html"></span>
-            <span class="css"></span>
+            <div class="flex">
+              <div class="tag html">HTML</div>
+              <div class="tag css">CSS</div>
+            </div>
           </div>
         </a>
         <a class="card" target="_blank" href="http://tltsu-pro.space">
@@ -146,9 +160,11 @@
           />
           <div class="card__body">
             <h3>tltsu-pro.space</h3>
-            <span class="html"></span>
-            <span class="css"></span>
-            <span class="js"></span>
+            <div class="flex">
+              <div class="tag html">HTML</div>
+              <div class="tag css">CSS</div>
+              <div class="tag js">JavaScript</div>
+            </div>
           </div>
         </a>
         <a class="card" target="_blank" href="internet-magazine">
@@ -160,9 +176,11 @@
           <div class="card__body">
             <h3 lang="en">Internet Magazine</h3>
             <h3 lang="ru">Интернет-журнал</h3>
-            <span class="html"></span>
-            <span class="css"></span>
-            <span class="js"></span>
+            <div class="flex">
+              <div class="tag html">HTML</div>
+              <div class="tag css">CSS</div>
+              <div class="tag js">JavaScript</div>
+            </div>
           </div>
         </a>
         <a class="card" target="_blank" href="social-network">
@@ -174,23 +192,11 @@
           <div class="card__body">
             <h3 lang="en">Social Network</h3>
             <h3 lang="ru">Социальная Сеть</h3>
-            <span class="ts"></span>
-            <span class="react"></span>
-            <span class="mobx"></span>
-          </div>
-        </a>
-        <a class="card" target="_blank" href="vue-messenger">
-          <img
-            class="card__preview"
-            src="res/vue-messenger.webp"
-            alt="Site preview"
-          />
-          <div class="card__body">
-            <h3 lang="en">Vue Messenger</h3>
-            <h3 lang="ru">Мессенджер</h3>
-            <span class="vue"></span>
-            <span class="vuex"></span>
-            <span class="sass"></span>
+            <div class="flex">
+              <div class="tag ts">TypeScript</div>
+              <div class="tag react">React</div>
+              <div class="tag mobx">Mobx</div>
+            </div>
           </div>
         </a>
         <a class="card" target="_blank" href="book-store">
@@ -200,13 +206,143 @@
             alt="Site preview"
           />
           <div class="card__body">
-            <h3 lang="en">Book store</h3>
+            <h3 lang="en">Book Store</h3>
             <h3 lang="ru">Книжный Магазин</h3>
-            <span class="ts"></span>
-            <span class="react"></span>
-            <span class="redux"></span>
+            <div class="flex">
+              <div class="tag ts">TypeScript</div>
+              <div class="tag react">React</div>
+              <div class="tag redux">Redux</div>
+            </div>
           </div>
         </a>
+      </div>
+    </section>
+    <section>
+      <h2 lang="en">Experience</h2>
+      <h2 lang="ru">Опыт</h2>
+      <div class="items">
+        <div class="card">
+          <div class="card__body">
+            <p lang="en" class="dim">July 2021 - present</p>
+            <p lang="ru" class="dim">Июль 2021 - по сей день</p>
+            <h3 lang="en">Open School ltd.</h3>
+            <h3 lang="ru">ООО «Открытая школа»</h3>
+            <h3 lang="en">Front-end developer</h3>
+            <h3 lang="ru">Front-end разработчик</h3>
+            <p lang="en">
+              Participation in the development of a massive web application for
+              online education in schools of CIS countries as Junior programmer
+            </p>
+            <p lang="ru">
+              Участие в разработке комплексного веб-приложения для онлайн
+              обучения в школах СНГ в качестве Junior-программиста
+            </p>
+            <h4 lang="en">Technology stack:</h4>
+            <h4 lang="ru">Технологический стек:</h4>
+            <div class="flex">
+              <div class="tag vue">Vue</div>
+              <div class="tag vuex">Vuex</div>
+              <div class="tag less">Less.js</div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__body">
+            <p lang="en" class="dim">April 2021 - May 2021</p>
+            <p lang="ru" class="dim">Апрель 2021 - Май 2021</p>
+            <h3>Quick Dining Room</h3>
+            <h3 lang="en">Front-end developer</h3>
+            <h3 lang="ru">Front-end разработчик</h3>
+            <p lang="en">
+              Incomplete internship participation in the development of an
+              application for restaurants based on computer vision
+            </p>
+            <p lang="ru">
+              Незавершенная стажировка в стартапе по разработке приложения для
+              ресторанов, основанного на компьютерном зрении
+            </p>
+            <h4 lang="en">Technology stack:</h4>
+            <h4 lang="ru">Технологический стек:</h4>
+            <div class="flex">
+              <div class="tag angular">Angular</div>
+              <div class="tag sass">SASS</div>
+              <div class="tag electron">Electron</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2 lang="en">Education</h2>
+      <h2 lang="ru">Образование</h2>
+      <div class="items">
+        <div class="card">
+          <div class="card__body">
+            <p lang="en" class="dim">September 2021 - present</p>
+            <p lang="ru" class="dim">Сентябрь 2021 - по сей день</p>
+            <h3 lang="en">Togliatti State University</h3>
+            <h3 lang="ru">Гимназия 11, Москва</h3>
+            <h3 lang="en">Higher education</h3>
+            <h3 lang="ru">Высшее образование</h3>
+            <p lang="en">
+              Higher education at the flagship state university at the faculty
+              of «Mobile and network technologies»
+            </p>
+            <p lang="ru">
+              Высшее образование в опорном государственном университете на
+              факультете «Мобильные и сетевые технологии»
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__body">
+            <p lang="en" class="dim">September 2010 - May 2021</p>
+            <p lang="ru" class="dim">Сентябрь 2010 - Май 2021</p>
+            <h3 lang="en">Eleventh gymnasium, Moscow</h3>
+            <h3 lang="ru">Гимназия 11, Москва</h3>
+            <h3 lang="en">General education</h3>
+            <h3 lang="ru">Среднее образование</h3>
+            <p lang="en">
+              Secondary general education received at the gymnasium with
+              in-depth study of physics, computer science and mathematics
+            </p>
+            <p lang="ru">
+              Среднее общее образование, полученное в гимназии в классе с
+              физико-математическим уклоном
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__body">
+            <p lang="en" class="dim">September 2020 - May 2020</p>
+            <p lang="ru" class="dim">Сентябрь 2020 - Май 2020</p>
+            <h3 lang="en">Samsung IT Academy</h3>
+            <h3 lang="ru">IT-Академия Samsung</h3>
+            <h3 lang="en">Android development course</h3>
+            <h3 lang="ru">Курс Андроид-разработки</h3>
+            <p lang="en">
+              One-year course of «Android Development» with the defense of the
+              final project, completed with honors
+            </p>
+            <p lang="ru">
+              Курс длиной в один учебный год по направлению
+              «Android-разработка‎»‎ с защитой итогового проекта, завершенный с
+              отличием
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2 lang="en">Languages</h2>
+      <h2 lang="ru">Языки</h2>
+      <div class="flex">
+        <div class="tag ru" lang="en">Russian - native</div>
+        <div class="tag ru" lang="ru">Русский - родной</div>
+        <div class="tag en" lang="en">English - C1</div>
+        <div class="tag en" lang="ru">Английский - C1</div>
+        <div class="tag es" lang="en">Spanish - B1</div>
+        <div class="tag es" lang="ru">Испанский - B1</div>
       </div>
     </section>
   </body>

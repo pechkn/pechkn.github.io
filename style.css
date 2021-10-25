@@ -58,6 +58,7 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 17px;
+  padding: 2rem 0;
 }
 
 section {
@@ -93,13 +94,15 @@ h2,
 h3,
 h4,
 button,
-li {
+li,
+.tag {
   line-height: 1.4;
   padding: 0.25rem 0.5rem;
 }
 
 a {
   color: #07e;
+  cursor: pointer;
 }
 
 a:not([class]):hover {
@@ -119,19 +122,14 @@ li:not([class]):before {
 }
 
 .items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.items:after {
-  content: "";
-  width: 20.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .flex {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .dim {
@@ -141,13 +139,12 @@ li:not([class]):before {
 
 .card {
   outline: 1px solid var(--border-color);
-  width: 19.5rem;
+  width: calc(100% - 1rem);
   margin: 0.5rem;
-  align-self: flex-start;
 }
 
 .card__preview {
-  width: 19.5rem;
+  width: 100%;
   height: 14rem;
   display: block;
   object-fit: cover;
@@ -155,20 +152,93 @@ li:not([class]):before {
 }
 
 .card__body {
-  padding: 0.5rem;
-}
-
-span {
-  display: inline-block;
-  padding-right: 0;
-  padding: 1rem 0 1rem 0.5rem;
+  padding: 0.25rem 0.5rem 0.75rem 0.25rem;
 }
 
 .tag {
-  display: inline-block;
   border-radius: 1rem;
+  color: black;
   padding: 0.25rem 0.75rem;
-  margin: 0.75rem 0 1rem 1rem;
+  margin: 0.25rem 0.25rem 0.25rem 0.5rem;
+}
+
+.html {
+  background-color: #e96228;
+}
+
+.css {
+  background-color: #563d7c;
+  color: #fafafa;
+}
+
+.js {
+  background-color: #f1e05a;
+}
+
+.ts {
+  background-color: #2f74c0;
+  color: #fafafa;
+}
+
+.react {
+  background-color: #61dbfb;
+}
+
+.redux {
+  background-color: #764abc;
+  color: #fafafa;
+}
+
+.mobx {
+  background-color: #c35921;
+  color: #fafafa;
+}
+
+.vue {
+  background-color: #41b883;
+}
+
+.vuex {
+  background-color: #34495e;
+  color: #fafafa;
+}
+
+.sass {
+  background-color: #c76494;
+}
+
+.less {
+  color: #fafafa;
+  background-color: #1d365d;
+}
+
+.node {
+  background-color: #75ad63;
+}
+
+.linux {
+  background-color: #f5be04;
+}
+
+.bash {
+  background-color: #39b54a;
+}
+
+.git {
+  background-color: #e94e31;
+}
+
+.mongo {
+  background-color: #12914e;
+}
+
+.angular {
+  color: #fafafa;
+  background-color: #c3002f;
+}
+
+.electron {
+  background-color: #a0ebf9;
 }
 
 .ru {
@@ -182,113 +252,4 @@ span {
 
 .es {
   background-color: orange;
-}
-
-span:before {
-  border-radius: 1rem;
-  padding: 0.25rem 0.75rem;
-  color: black;
-}
-
-.html:before {
-  content: "HTML";
-  background-color: #e96228;
-}
-
-.css:before {
-  content: "CSS";
-  background-color: #563d7c;
-  color: #fafafa;
-}
-
-.js:before {
-  content: "JavaScript";
-  background-color: #f1e05a;
-}
-
-.ts:before {
-  content: "TypeScript";
-  background-color: #2f74c0;
-  color: #fafafa;
-}
-
-.react:before {
-  content: "React";
-  background-color: #61dbfb;
-}
-
-.redux:before {
-  content: "Redux";
-  background-color: #764abc;
-  color: #fafafa;
-}
-
-.mobx:before {
-  content: "Mobx";
-  background-color: #c35921;
-  color: #fafafa;
-}
-
-.vue:before {
-  content: "Vue";
-  background-color: #41b883;
-}
-
-.vuex:before {
-  content: "Vuex";
-  background-color: #34495e;
-  color: #fafafa;
-}
-
-.sass:before {
-  content: "SASS";
-  background-color: #c76494;
-}
-
-.less:before {
-  content: "Less.js";
-  color: #fafafa;
-  background-color: #1d365d;
-}
-
-.node:before {
-  content: "Node.js";
-  background-color: #75ad63;
-}
-
-.linux:before {
-  content: "Linux";
-  background-color: #f5be04;
-}
-
-.bash:before {
-  content: "Bash";
-  background-color: #39b54a;
-}
-
-.git:before {
-  content: "Git";
-  background-color: #e94e31;
-}
-
-.mysql:before {
-  content: "MySQL";
-  color: #fafafa;
-  background-color: #007d7d;
-}
-
-.mongo:before {
-  content: "MongoDB";
-  background-color: #12914e;
-}
-
-.angular:before {
-  content: "Angular";
-  color: #fafafa;
-  background-color: #c3002f;
-}
-
-.electron:before {
-  content: "Electron";
-  background-color: #a0ebf9;
 }
