@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+    <p>
+      <b>Declarative programming</b> - paradigm of building programs by
+      expressing the logic of elements without describing their control flow
+    </p>
+
+    <p>
+      <b>Functional programming</b> - type of declarative programming that -
+      constructing programs by applying and composing pure functions
+    </p>
+
+    <p>
+      <b>Pure function</b> - function that doesn't have side-effects and always
+      gives same output with same input
+    </p>
+
+    <p><b>Procedure</b> - impure function</p>
+
+    <p>
+      <b>Imperative programming</b> - paradigm of building programs by
+      implementing algorithms in exact explicit steps
+    </p>
+
+    <p>
+      <b>Object-Oriented Programming (OOP)</b> - type of imperative programming
+      based on the concept of classes - objects that can contain data
+    </p>
+    <ul>
+      <li>
+        <b>Encapsulation</b> - ability to change access scope of field</li>
+      <li>
+        <b>Abstraction</b> - separating identical properties of different
+        objects into another
+      </li>
+      <li>
+        <b>Inheritance</b> - ability to create objects by extending existing
+        ones
+      </li>
+      <li>
+        <b>Polymorphism</b> - different method behaviour depending on type and
+        amount of input
+      </li>
+    </ul>
+    <p><b>SOLID</b> - OOP acronym that stands for 5 principles</p>
+    <ul>
+      <li>
+        <b>Single responsibility</b> - class does only 1 thing</li>
+      <li>
+        <b>Open/closed</b> - class can be opened or closed for others to use
+      </li>
+      <li>
+        <b>Liskov's substitution</b> - class can be replaced by any of its
+        children
+      </li>
+      <li>
+        <b>Interface segregation</b> - classes' interfaces should be separated
+        into many small promises for simpler interaction
+      </li>
+      <li>
+        <b>Dependency inversion</b> - classes shouldn't expect each other to
+        never change, should use promises and could change as long as they allow
+      </li>
+    </ul>
+    <p><b>Data structure</b> - object of any manipulation in programming</p>
+    <ul>
+      <li>
+        <b>Array</b> - collection of elements, each identified by index</li>
+      <li>
+        <b>Stack</b> - collection of elements that is modified in
+        <b>last in, first out (LIFO)</b> order
+      </li>
+      <li>
+        <b>Queue</b> - collection of entities that is modified in
+        <b>first in, first out (FIFO)</b> order
+      </li>
+      <li>
+        <b>Linked list</b> - collection of entities whose order is controlled by
+        each element pointing to the next regardless of their location in memory
+      </li>
+      <li>
+        <b>Graph</b> - representation of connections that can be directed
+        between nodes that can be weighted
+      </li>
+      <li>
+        <b>Tree</b> - hierarchical graph with root value and subtrees of
+        children
+      </li>
+      <li>
+        <b>Hash table</b> - associative array that maps keys to values</li>
+    </ul>
+    <p><b>Algorithm</b> - set of rules to be followed by a computer</p>
+    <ul>
+      <li>
+        <b>Binary Search</b> finds index of target number in sorted array by
+        dividing it on 2 halves on each iteration, efficiency is O(log(n)),
+        where n is array length
+      </li>
+      <li>
+        <b>Insertion Sort</b> sorts array of numbers by comparing and ordering
+        them one by one, efficiency is from O(n) to O(n<sup>2</sup>)
+      </li>
+      <li>
+        <b>Selection Sort</b> sorts array by finding and selecting next smallest
+        number across array one after another, efficiency is O(n)
+      </li>
+      <li>
+        <b>Merge Sort</b> sorts array by dividing it on 2 halves based on index
+        on each iteration and sorting each half, efficiency is O(n \* log(n))
+      </li>
+      <li>
+        <b>Quick Sort</b> sorts array by dividing it on 2 halves based on some
+        median value called pivot and sorting each half, efficiency is from O(n
+        \* log(n)) to O(n<sup>2</sup>)
+      </li>
+      <li>
+        <b>Heap Sort</b> sorts array by dividing it on sorted and unsorted parts
+        and finding and selecting next the smallest number across unsorted part
+        one after another, efficincy is O(n \* log(n))
+      </li>
+      <li>
+        <b>Counting Sort</b> sorts array of values in specific range by counting
+        value's number of appearances in array one by one, efficiency is O(n +
+        k), where k is range of values
+      </li>
+      <li>
+        <b>Breadth-First Search (BFS)</b> searches tree or graph data structure
+        by checking neighbours of nodes level by level, efficiency is O(v + e),
+        where v and e are amounts of graph vertices and edges; and becomes
+        <b>inorder</b> if discovers left child node earlier than right and
+        <b>reverse</b> if not
+      </li>
+      <li>
+        <b>Depth-first Search (DFS)</b> searches tree or graph data structure by
+        checking node branches as far as possible one by one, efficiency is O(v
+        + e)
+      </li>
+      <li>
+        <b>Kruskal’s Algorithm</b> constructs tree of edges with minimum weight
+        out of undirected connected graph, efficiency is O(n<sup>2</sup>)
+      </li>
+      <li>
+        <b>Dijkstra’s Algorithm</b> finds the shortest path in weighted graph
+        with non-negative edge weights from root, efficiency is O(e \* log(v))
+      </li>
+      <li>
+        <b>Floyd Warshall's Algorithm</b> finds the shortest path in weighted
+        graph with possible negative edge weights from root, efficiency is
+        O(v<sup>3</sup>)
+      </li>
+      <li>
+        <b>Bellman–Ford's Algorithm</b> finds the shortest path in weighted
+        graph with possible negative edge weights from particular given vertex,
+        efficiency is O(v + e)
+      </li>
+      <li>
+        <b>Kadane's Algorithm</b> constructs subarray with biggest sum within
+        from array of numbers by placing maximum subarray endings at each index,
+        efficiency is O(n)
+      </li>
+      <li>
+        <b>Lee's Algorithm</b> finds shortest path from given coordinates to
+        another in a maze that is represented as matrix with ways as ones and
+        walls as zeroes, efficiency is O(a \* b), where a and b are matrix
+        dimensions
+      </li>
+      <li>
+        <b>Flood Fill Algorithm</b> finds the biggest connected area of same
+        values in matrix by using BFS, efficiency is O(a \* b)
+      </li>
+      <li>
+        <b>Floyd's Cycle Algorithm</b> detects cycle in a linked list by hashing
+        and grouping nodes, efficiency is O(n)
+      </li>
+      <li>
+        <b>Topological Sort</b> constructs topological flattened sequence of
+        nodes from weighted Directed Acycled Graph (DAG), efficiency is O(v + e)
+      </li>
+    </ul>
+    <p>
+      <b>Patterns</b> - general solutions for common problems in software
+      development
+    </p>
+    <ul>
+      <li>
+        <b>Factory Method</b> - superclass with interface for creating objects
+        allows child classes to alter their type
+      </li>
+      <li>
+        <b>Abstract Factory</b> - possibility of creating families of related
+        objects without specifying their concrete classes
+      </li>
+      <li>
+        <b>Builder</b> - constructing complex objects step by step with ability
+        to produce different types of it on different stages
+      </li>
+      <li>
+        <b>Prototype</b> - abstract instance with non-unique code that can be
+        shared across multiple objects
+      </li>
+      <li>
+        <b>Singleton</b> - class that strictly has only 1 instance and provides
+        a global access point to itself
+      </li>
+      <li>
+        <b>Adapter</b> - something that allows objects with incompatible
+        interfaces to interact
+      </li>
+      <li>
+        <b>Bridge</b> - split of complex classes into abstraction and
+        implementation that can be developed independently
+      </li>
+      <li>
+        <b>Composite</b> - object can be recursive child and parent of other
+        objects while still normally acting as individual object
+      </li>
+      <li>
+        <b>Decorator</b> - wrapper that can attach new behaviors to objects by
+        placing them inside itself
+      </li>
+      <li>
+        <b>Facade</b> - simplified interface to a library or any other complex
+        set of classes
+      </li>
+      <li>
+        <b>Flyweight</b> - fitting more objects into the available amount of
+        memory by sharing common parts in multiple objects
+      </li>
+      <li>
+        <b>Proxy</b> - placeholder of another object that allows to access the
+        object and perform something before or after it
+      </li>
+    </ul>
+    <p><b>Test</b> - technique of executing a program to find failures</p>
+    <ul>
+      <li>
+        <b>Unit testing</b> ensures that any part of the code delivers expected
+        output
+      </li>
+      <li>
+        <b>Component testing</b> verifies the functionality and/or usability of
+        single complex object
+      </li>
+      <li>
+        <b>Smoke testing</b> verifies the basic functionality of program at
+        earlier stages of development
+      </li>
+      <li>
+        <b>Integration testing</b> finds out how individual components function
+        together
+      </li>
+      <li>
+        <b>Regression testing</b> makes sure that codebase change hasn’t broken
+        the existing functionality
+      </li>
+      <li>
+        <b>Sanity testing</b> determines that the minor modifications have fixed
+        the issues and haven't introduced new ones
+      </li>
+      <li>
+        <b>System testing</b> evaluates complete, integrated system's compliance
+        with the specified requirements at final stages
+      </li>
+      <li>
+        <b>Acceptance testing</b> verifies that software can handle actual
+        users' required tasks in real-world scenarios
+      </li>
+    </ul>
+    <p><b>Agile</b> - set of various methods and approaches to management</p>
+    <ul>
+      <li>
+        Focus on customers for all employees of the company
+      </li>
+      <li>
+        Simplification of organizational structure, rules, processes
+      </li>
+      <li>
+        Short iterative loops with intermediate results
+      </li>
+      <li>
+        Retrospective and feedback usage
+      </li>
+      <li>
+        Independence and responsibility of employees
+      </li>
+    </ul>
+    <p>
+      <b>Scrum</b> - implementation of agile that includes 2-3 weeks iteration
+      of work, 15-minutes daily meetings to track progress, demonstrating and
+      analyzing of what's done
+    </p>
+
+    <p><b>Kanban</b> - set of various methods and approaches to management</p>
+    <ul>
+      <li>
+        Balancing demands with capacity of available human resource
+      </li>
+      <li>
+        Handling of bottlenecks of production process
+      </li>
+      <li>
+        Kanban board visualization of work to give an understanding of what,
+        when, and how much to do
+      </li>
+    </ul>
+    <p>
+      <b>Hypertext Transfer Protocol (HTTP)</b> - international standart of
+      accessing websites with default port 80 that offers different types of
+      requests
+    </p>
+    <ul>
+      <li>
+        <b>POST</b> submits data to the specified resource</li>
+      <li>
+        <b>GET</b> requests and retrieves data of the specified resource</li>
+      <li>
+        <b>PUT</b> replaces all data of the target resource with the request
+        payload
+      </li>
+      <li>
+        <b>DELETE</b> deletes the specified data</li>
+      <li>
+        <b>HEAD</b> asks for a response identical to that of a GET request, but
+        without the response body
+      </li>
+      <li>
+        <b>CONNECT</b> establishes a tunnel to the server identified by the
+        target resource
+      </li>
+      <li>
+        <b>OPTIONS</b> used to describe the communication options for the target
+        resource
+      </li>
+      <li>
+        <b>TRACE</b> performs a message loop-back test along the path to the
+        target resource
+      </li>
+      <li>
+        <b>PATCH</b> used to apply partial modifications to data</li>
+    </ul>
+    <p>
+      <b>Create, read, update and delete (CRUD)</b> - interface convention
+      shared by HTTP with methods post, get, put and delete
+    </p>
+
+    <p><b>Responses</b> of target server are grouped in 5 classes</p>
+    <ul>
+      <li>
+        Informational responses (100–199)
+      </li>
+      <li>
+        Successful responses (200–299)
+      </li>
+      <li>
+        Redirects (300–399)
+      </li>
+      <li>
+        Client errors (400–499)
+      </li>
+      <li>
+        Server errors (500–599)
+      </li>
+    </ul>
+    <p>
+      <b>Simple Object Access Protocol (SOAP)</b> - messaging protocol that uses
+      XML
+    </p>
+
+    <p>
+      <b>Representational State Transfer (REST)</b> - messaging protocol that
+      uses JSON and, usually, HTTP and used for web services called RESTful that
+      operate only text resources and share endpoints
+    </p>
+
+    <p>
+      <b>Domain Naming System (DNS)</b> - software that binds IPs of servers to
+      domains
+    </p>
+
+    <p>
+      <b>Cross-Origin Resource Sharing (CORS)</b> - HTTP-header and preliminary
+      request based mechanism that control which domains and IPs are allowed to
+      load server's resources
+    </p>
+
+    <p>
+      <b>Socket</b> - software structure within a network node of a computer
+      network that serves as an endpoint for manipulating data continuously and
+      is created only during the lifetime of a application
+    </p>
+
+    <p>
+      <b>Progressive Web App (PWA)</b> - modern application development approach
+      with 3 main points
+    </p>
+    <ul>
+      <li>
+        <b>HyperText Transfer Protocol Secure (HTTPS)</b> - encrypted and more
+        secure version of HTTP with default port 443
+      </li>
+      <li>
+        <b>Service worker</b> - script that controls network requests handling,
+        asset caching, can make web page faster and even work offline
+      </li>
+      <li>
+        <b>Manifest</b> - JSON file that describes how app appears to the user
+      </li>
+    </ul>
+    <p>
+      <b>Accessibility</b> - web-development approach that makes browsing
+      websites possible for people with disabilities
+    </p>
+    <ul>
+      <li>
+        Semantic HTML
+      </li>
+      <li>
+        Declaring language of site
+      </li>
+      <li>
+        Meaningful links
+      </li>
+      <li>
+        Placeholders and alternative texts
+      </li>
+    </ul>
+    <p>
+      <b>Search Engine Optimization (SEO)</b> - set of practices to raise it in
+      search results and increase amount of site visits
+    </p>
+    <ul>
+      <li>
+        Rational HTML structure
+      </li>
+      <li>
+        Relevant words and texts
+      </li>
+      <li>
+        Small webpage size
+      </li>
+      <li>
+        Correct headings
+      </li>
+      <li>
+        Links with popular webpages
+      </li>
+    </ul>
+    <p>
+      <b>Shadow DOM</b> - part of HTML DOM with HTML <b>templates</b> that isn't
+      displayed on the page by default and imply JS manipulation
+    </p>
+    <p><b>Layout</b> - set of CSS rules that positions elements on the page</p>
+    <ul>
+      <li>
+        <b>Normal flow</b> - layout where elements are placed one after another
+        depending on their size and value of<code>display</code>value, e.
+        g.<code>block</code>
+      </li>
+      <li>
+        <b>Floats</b> - layout where elements can be aligned to different sides
+        of parent containers
+      </li>
+      <li>
+        <b>Positioning</b> - layout where elements can be taken out of normal
+        layout flow and placed independently of others
+      </li>
+      <li>
+        <b>Flexbox</b> - single-dimensional layout that can be used to create
+        very complex row or column layouts
+      </li>
+      <li>
+        <b>Grid</b> - two-dimensional and packed with a lot of properties layout
+        that allows precisely predefine elements' place on the webpage
+      </li>
+    </ul>
+    <p>
+      <b>Preprocessor</b> - program that changes the way stylesheets are written
+      and then compiles them to normal CSS so browser can understand it
+    </p>
+    <ul>
+      <li>
+        <b>Variable</b> - piece of information reusable across stylesheet, e.
+        g.<code>$color: #000</code>
+      </li>
+      <li>
+        <b>Nesting</b> - ability to recursively place selectors inside of their
+        bodies, e. g.<code>ul { li { } }</code>
+      </li>
+      <li>
+        <b>Mixin</b> - group of properties, e. g.<code
+          >@mixin box { margin: 0; padding: 0 }</code
+        >
+      </li>
+      <li>
+        <b>Inheritance</b> - ability to extend existing styles, e. g.<code
+          >.child { @extend %parent; }</code
+        >
+      </li>
+    </ul>
+    <p>
+      <b>JS Objects</b> include Boolean, Number, String, Date, Math, RegExp,
+      Array, Function, Object, Error, BigInt, Map, Set, WeakMap, WeakSet, JSON,
+      promise, generator, proxy, intl
+    </p>
+
+    <p><b>JS Primitives</b> inclide string, number, boolean, null, undefined</p>
+
+    <p><b>JS Values</b> include Infinity, NaN, undefined, globalThis</p>
+
+    <p>
+      <b>Prototype</b> - object that can be used to store functionality and
+      reuse it across many child components, e. g.<code
+        >function.prototype.a = 1</code
+      >
+    </p>
+
+    <p>
+      <b>Scope</b> - some semblance of encapsulation, property of objects and
+      variables that controls their accessibility from anywhere in the script
+    </p>
+
+    <p>
+      <b>Hoisting</b> - making function's inner global variables available to
+      all functions by executing it
+    </p>
+
+    <p>
+      <b>Closure</b> - technique of making contexts private in a form of
+      recursive functions that share same lexical environment of parent function
+    </p>
+
+    <p>
+      <b>Debouncing</b> - programming practice used to ensure that function does
+      not execute too often
+    </p>
+
+    <p>
+      <b>Throttling</b> - programming practice used to ensure that function
+      executes but at least and at most once in a specified time period
+    </p>
+
+    <p>
+      <b>Currying</b> - technique that separates functions by input data and get
+      partials that implement only part of their functionality, e. g.
+    </p>
+    <code
+      >function curry(f) { return function(a) { return function(b) { return f(a,
+      b) } } }</code
+    >
+
+    <p>
+      <b>Immediately-invoked Function Expressions (IIFE)</b> - functions that
+      execute as soon as they are created, e. g.<code
+        >( function (a) { return a + 2 } ) ()</code
+      >or<code>( a => a + 2 ) ()</code>
+    </p>
+
+    <p>
+      <b>Destructuring</b> - convenient way to unpack values from arrays or
+      properties from objects using spread operator<code>...</code> e. g.<code
+        >[a, b] = [1, 2]</code
+      ><code>[a, ...rest] = [1, 2, 3, 4]</code
+      ><code>array = [...array, a]</code>
+    </p>
+
+    <p>
+      <b>Strict mode</b> - JS feature that is activated by adding<code
+        >'use strict'</code
+      >line before the required part of code, which disables backward
+      compatibility and changes script's behavior slightly
+    </p>
+    <ul>
+      <li>
+        Turns some JS silent errors to throw errors
+      </li>
+      <li>
+        Fixes mistakes that make it difficult for JavaScript engines to perform
+        optimizations
+      </li>
+      <li>
+        Prohibits some syntax likely to be removed in future versions of
+        languages
+      </li>
+    </ul>
+    <p>
+      <b>Try-Catch</b> - mechanism of error handling in JS, when it tries to
+      execute code, then, if it doesn't succeed, catches possible error and,
+      finally, runs some code, e. g.<code
+        >try { a() } catch (e) { console.log(e) } finally { console.log('done')
+        }</code
+      >
+    </p>
+
+    <p>
+      <b>Promise</b> - object with unique methods like<code>then</code
+      ><code>catch</code>that is returned by async function and is used to
+      notify that it's execution is completed
+    </p>
+
+    <p>
+      <b>Await</b> - mechanism that executed code after some promise by async
+      function is returned, e. g.<code>var result = await new Promise()</code>
+    </p>
+
+    <p>
+      <b>Asynchronous JavaScript And XML (AJAX)</b> - technique that allows
+      making HTTP requests directly from scripts. e. g.
+      <code
+        >fetch('http://example.com/data.json').then(response =>
+        response.json())</code
+      >
+    </p>
+
+    <p>
+      <b>Bubbling</b> - principle in JS, where events are captured from deepest
+      element to all of it's parents recursively
+    </p>
+
+    <p>
+      <b>Hook</b> - function that lets modify React state and lifecycle features
+      in function component
+    </p>
+    <ul>
+      <li>
+        <code>useState</code>returns a state value and a function to update it
+      </li>
+      <li>
+        <code>useEffect</code>asynchronously runs imperative, possibly effectful
+        code after component is rendered
+      </li>
+      <li>
+        <code>useContext</code>accepts a context object and returns it's current
+        value
+      </li>
+      <li>
+        <code>useReducer</code>returns a state paired with a dispatch method
+        that can modify it indirectly
+      </li>
+      <li>
+        <code>useCallback</code>accepts an callback and an array of dependencies
+        and returns it if they change
+      </li>
+      <li>
+        <code>useMemo</code>accepts an function and an array of dependencies and
+        recomputes it if they change
+      </li>
+      <li>
+        <code>useRef</code>returns a mutable ref object initialised with the
+        passed argument
+      </li>
+      <li>
+        <code>useImperativeHandle</code>customizes handler is exposed to parent
+        components when using refs
+      </li>
+      <li>
+        <code>useLayoutEffect</code>is identical to useEffect, but also runs
+        after all DOM mutations
+      </li>
+      <li>
+        <code>useDebugValue</code>can be used to display a label for custom
+        hooks in React DevTools
+      </li>
+    </ul>
+    <p>
+      <b>Lifecycle</b> - set of stages a program undergoes, from initial
+      creation to execution
+    </p>
+    <ul>
+      <li>
+        <code>setState</code>changes component state and re-renders it and its'
+        children with updated state
+      </li>
+      <li>
+        <code>forceUpdate</code>forces re-render of component even if nothing is
+        changed
+      </li>
+      <li>
+        <code>componentDidMount</code>is invoked immediately after a component
+        is inserted into the DOM
+      </li>
+      <li>
+        <code>componentWillUnmount</code>is invoked immediately before a
+        component is removed from the DOM
+      </li>
+      <li>
+        <code>componentDidUpdate</code>is invoked when component gets
+        re-rendered
+      </li>
+      <li>
+        <code>getDerivedStateFromProps</code>is invoked each time right before
+        calling the render method
+      </li>
+      <li>
+        <code>getSnapshotBeforeUpdate</code>is invoked right before the changes
+        are committed to the DOM
+      </li>
+      <li>
+        <code>shouldComponentUpdate</code>controls that changes in state or
+        props trigger re-render
+      </li>
+      <li>
+        <code>getDerivedStateFromError</code>is invoked after an error has been
+        thrown by a component
+      </li>
+      <li>
+        <code>componentDidCatch</code>is invoked after an error has been
+        processed by a component
+      </li>
+    </ul>
+    <p>
+      <b>Redux</b> - immutable state container, where global state of app is an
+      single object tree called store. e. g.<code
+        >function reducer(state, action) { action.type === 'change' && return {
+        ...state, a: 1 } }; let store = createStore(reducer)</code
+      >
+    </p>
+    <ul>
+      <li>
+        <b>Action</b> - object with<code>type</code>field that modifies global
+        app store
+      </li>
+      <li>
+        <b>Reducer</b> - function that takes action as input and transforms
+        store accordingly
+      </li>
+      <li>
+        <b>Dispatch</b> - operation of assigning an action to a reducer</li>
+    </ul>
+    <p>
+      <b>Mobx</b> - simple mutable state container, where data as store is
+      directly provided to components by wrapper functions that make components
+      reactive
+    </p>
+
+    <p>
+      <b>Vue</b> - JS framework for building user interfaces which includes all
+      neccessary parts for web app development and is initialized via exporting
+      object with fields
+    </p>
+    <ul>
+      <li>
+        <code>data</code>holds variables used in component
+      </li>
+      <li>
+        <code>watch</code>observes particular data piece and executes on change
+      </li>
+      <li>
+        <code>template</code>contains HTML layout
+      </li>
+      <li>
+        <code>props</code>hold array of input data
+      </li>
+      <li>
+        <code>created</code>and other similar methods control lifecycle of app
+      </li>
+      <li>
+        <code>methods</code>holds differect functions used in component
+      </li>
+      <li>
+        <code>computed</code>is equal to<code>methods</code>but caches data
+      </li>
+      <li>
+        <code>mixins</code>hold array of objects that can be inserted in any
+        component to add their functionality
+      </li>
+    </ul>
+    <p>
+      <b>Vuex</b> - mutable Vue state container, where global state of app
+      consists of a global storage of all data, methods that alter that storage
+      via<code>commit</code>to<code>$store</code>context, and components that
+      access it, and can be created by connecting corresponding plugin and
+      creating Vuex object:<code
+        >Vue.use(Vuex); const store = new Vuex.Store({ state: { }, mutations: {
+        } })</code
+      >
+    </p>
+
+    <p>
+      <b>Webpack</b> - JS bundler that transforms front-end assets such as HTML,
+      CSS, and images and is configured via JS module with exports and rules for
+      sources, e. g.<code>const cssRegex = /\.css$/</code
+      ><code
+        >mode: isEnvProduction ? 'production' : isEnvDevelopment &&
+        'development'</code
+      >
+    </p>
+
+    <p>
+      <b>TypeScript</b> - strict syntactical compiler of JS that adds static
+      typing to the language and is designed for the development of large
+      applications
+    </p>
+    <ul>
+      <li>
+        <b>Interface</b> - custom type, e. g.<code
+          >interface Props { a : number }</code
+        >
+      </li>
+      <li>
+        <b>Generic</b> - polymorphic function, e. g.<code
+          >function (a: number): number { }</code
+        >
+      </li>
+      <li>
+        <b>Abstraction</b> - class that is only meant to be extended from, e.
+        g.<code>abstract class Class { abstract method(): void }</code>
+      </li>
+    </ul>
+  </section>
+  </body>
+</html>

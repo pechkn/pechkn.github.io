@@ -79,6 +79,14 @@ header {
   justify-content: space-between;
 }
 
+code {
+  font-family: monospace;
+  font-size: 14px;
+  margin: 0 0.5rem;
+  background-color: var(--border-color);
+  padding: 0.1rem 0.4rem;
+}
+
 p,
 h1,
 h2,
