@@ -229,12 +229,6 @@ span:before {
   color: #fafafa;
 }
 
-.bootstrap:before {
-  content: "Bootstrap";
-  background-color: #7952b3;
-  color: #fafafa;
-}
-
 .vue:before {
   content: "Vue";
   background-color: #41b883;
@@ -249,12 +243,6 @@ span:before {
 .sass:before {
   content: "SASS";
   background-color: #c76494;
-}
-
-.next:before {
-  content: "Next.js";
-  color: #fafafa;
-  background-color: black;
 }
 
 .less:before {
