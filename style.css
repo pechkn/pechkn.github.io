@@ -7,13 +7,60 @@ html[lang*="ru"] [lang="ru"] {
   display: block;
 }
 
-html[lang*="ru"] .tag[lang="ru"] {
-  display: inline-block;
+@font-face {
+  font-family: "Helvetica";
+  src: url("/res/Helvetica-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("/res/Helvetica-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("/res/Helvetica-Italics.ttf");
+  font-style: italic;
+}
+
+:root {
+  --fg: #1d1d1f;
+  --bg: #fafafa;
+  --fg-dim: #6E6E73;
+  --bg-dim: #f5f5f7;
+  --red: rgb(255, 59, 48);
+  --orange: rgb(255, 149, 0);
+  --yellow: rgb(255, 204, 0);
+  --green: rgb(52, 199, 89);
+  --mint: rgb(0, 199, 190);
+  --teal: rgb(48, 176, 199);
+  --cyan: rgb(50, 173, 230);
+  --blue: rgb(0, 122, 255);
+  --indigo: rgb(88, 86, 214);
+  --purple: rgb(175, 82, 222);
+  --pink: rgb(255, 45, 85);
+  --brown: rgb(162, 132, 94);
+  --accent: var(--blue);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg-color: #fafafa;
+    --border-color: #555;
+    --bg-color: #1d1d1f;
+  }
+  [data-theme="light"] {
+    --fg-color: #1d1d1f;
+    --border-color: gainsboro;
+    --bg-color: #fafafa;
+  }
 }
 
 :root,
 [data-theme="light"] {
-  --fg-color: #24292e;
+  --fg-color: #1d1d1f;
   --border-color: gainsboro;
   --bg-color: #fafafa;
 }
@@ -21,34 +68,95 @@ html[lang*="ru"] .tag[lang="ru"] {
 [data-theme="dark"] {
   --fg-color: #fafafa;
   --border-color: #555;
-  --bg-color: #121212;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --fg-color: #fafafa;
-    --border-color: #555;
-    --bg-color: #121212;
-  }
-  [data-theme="light"] {
-    --fg-color: #24292e;
-    --border-color: gainsboro;
-    --bg-color: #fafafa;
-  }
+  --bg-color: #1d1d1f;
 }
 
 * {
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
-  color: var(--fg-color);
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", Helvetica, Arial,
-    sans-serif;
   border: none;
   outline: none;
-  background-color: transparent;
   box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, "Roboto",
+    sans-serif;
+  background-color: transparent;
   text-decoration: none;
   line-height: 1;
+  color: var(--fg-color);
+  text-align: left;
+  font-size: inherit;
+}
+
+*:not(h1, h2, h3, h4, h5) {
+  letter-spacing: -.01em;
+}
+
+p,
+pre,
+q,
+li,
+b,
+i,
+a,
+s,
+small,
+time,
+code,
+sup,
+u,
+textarea,
+input,
+th,
+td,
+option,
+legend {
+  line-height: 1.4;
+}
+
+p,
+pre,
+q,
+h1,
+h2,
+h3,
+h4,
+h5,
+li,
+details,
+summary,
+form,
+th,
+td,
+input,
+select,
+button,
+.tabbar {
+  padding: 0.25rem 0.5rem;
+}
+
+h1, h2, h3, h4, h5, button {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.875rem;
 }
 
 body {
@@ -58,7 +166,7 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 17px;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 section {
@@ -82,26 +190,14 @@ header {
 
 code {
   font-family: monospace;
-  font-size: 14px;
+  font-size: 0.875rem;
   margin: 0 0.5rem;
   background-color: var(--border-color);
   padding: 0.1rem 0.4rem;
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-button,
-li,
-.tag {
-  line-height: 1.4;
-  padding: 0.25rem 0.5rem;
-}
-
 a {
-  color: #07e;
+  color: var(--accent);
   cursor: pointer;
 }
 
@@ -157,9 +253,9 @@ li:not([class]):before {
 
 .tag {
   border-radius: 1rem;
-  color: black;
-  padding: 0.25rem 0.75rem;
-  margin: 0.25rem 0.25rem 0.25rem 0.5rem;
+  color: #1d1d1f;
+  padding: 0.4rem 0.8rem;
+  margin: 0.5rem 0.25rem 0 0.5rem;
 }
 
 .html {
