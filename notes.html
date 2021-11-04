@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
-    <title>Vlad Pechkin's notes</title>
-  </head>
-  <body>
-    <section>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+  <title>Vlad Pechkin's notes</title>
+</head>
+
+<body>
+  <section>
     <p>
       <b>Declarative programming</b> - paradigm of building programs by
       expressing the logic of elements without describing their control flow
@@ -38,7 +40,8 @@
     </p>
     <ul>
       <li>
-        <b>Encapsulation</b> - ability to change access scope of field</li>
+        <b>Encapsulation</b> - ability to change access scope of field
+      </li>
       <li>
         <b>Abstraction</b> - separating identical properties of different
         objects into another
@@ -55,7 +58,8 @@
     <p><b>SOLID</b> - OOP acronym that stands for 5 principles</p>
     <ul>
       <li>
-        <b>Single responsibility</b> - class does only 1 thing</li>
+        <b>Single responsibility</b> - class does only 1 thing
+      </li>
       <li>
         <b>Open/closed</b> - class can be opened or closed for others to use
       </li>
@@ -75,7 +79,8 @@
     <p><b>Data structure</b> - object of any manipulation in programming</p>
     <ul>
       <li>
-        <b>Array</b> - collection of elements, each identified by index</li>
+        <b>Array</b> - collection of elements, each identified by index
+      </li>
       <li>
         <b>Stack</b> - collection of elements that is modified in
         <b>last in, first out (LIFO)</b> order
@@ -97,7 +102,8 @@
         children
       </li>
       <li>
-        <b>Hash table</b> - associative array that maps keys to values</li>
+        <b>Hash table</b> - associative array that maps keys to values
+      </li>
     </ul>
     <p><b>Algorithm</b> - set of rules to be followed by a computer</p>
     <ul>
@@ -320,15 +326,18 @@
     </p>
     <ul>
       <li>
-        <b>POST</b> submits data to the specified resource</li>
+        <b>POST</b> submits data to the specified resource
+      </li>
       <li>
-        <b>GET</b> requests and retrieves data of the specified resource</li>
+        <b>GET</b> requests and retrieves data of the specified resource
+      </li>
       <li>
         <b>PUT</b> replaces all data of the target resource with the request
         payload
       </li>
       <li>
-        <b>DELETE</b> deletes the specified data</li>
+        <b>DELETE</b> deletes the specified data
+      </li>
       <li>
         <b>HEAD</b> asks for a response identical to that of a GET request, but
         without the response body
@@ -346,7 +355,8 @@
         target resource
       </li>
       <li>
-        <b>PATCH</b> used to apply partial modifications to data</li>
+        <b>PATCH</b> used to apply partial modifications to data
+      </li>
     </ul>
     <p>
       <b>Create, read, update and delete (CRUD)</b> - interface convention
@@ -497,14 +507,10 @@
         bodies, e. g.<code>ul { li { } }</code>
       </li>
       <li>
-        <b>Mixin</b> - group of properties, e. g.<code
-          >@mixin box { margin: 0; padding: 0 }</code
-        >
+        <b>Mixin</b> - group of properties, e. g.<code>@mixin box { margin: 0; padding: 0 }</code>
       </li>
       <li>
-        <b>Inheritance</b> - ability to extend existing styles, e. g.<code
-          >.child { @extend %parent; }</code
-        >
+        <b>Inheritance</b> - ability to extend existing styles, e. g.<code>.child { @extend %parent; }</code>
       </li>
     </ul>
     <p>
@@ -519,9 +525,7 @@
 
     <p>
       <b>Prototype</b> - object that can be used to store functionality and
-      reuse it across many child components, e. g.<code
-        >function.prototype.a = 1</code
-      >
+      reuse it across many child components, e. g.<code>function.prototype.a = 1</code>
     </p>
 
     <p>
@@ -553,30 +557,29 @@
       <b>Currying</b> - technique that separates functions by input data and get
       partials that implement only part of their functionality, e. g.
     </p>
-    <code
-      >function curry(f) { return function(a) { return function(b) { return f(a,
-      b) } } }</code
-    >
+    <code>function curry(f) { return function(a) { return function(b) { return f(a,
+      b) } } }</code>
+
+    <p>
+      <b>Optional chaining</b> - operator that allows to read the value of a property located deep within a chain of
+      connected objects without checking their validity, e. g. <code>person.dog?.name</code>
+    </p>
 
     <p>
       <b>Immediately-invoked Function Expressions (IIFE)</b> - functions that
-      execute as soon as they are created, e. g.<code
-        >( function (a) { return a + 2 } ) ()</code
-      >or<code>( a => a + 2 ) ()</code>
+      execute as soon as they are created, e.
+      g.<code>( function (a) { return a + 2 } ) ()</code>or<code>( a => a + 2 ) ()</code>
     </p>
 
     <p>
       <b>Destructuring</b> - convenient way to unpack values from arrays or
-      properties from objects using spread operator<code>...</code> e. g.<code
-        >[a, b] = [1, 2]</code
-      ><code>[a, ...rest] = [1, 2, 3, 4]</code
-      ><code>array = [...array, a]</code>
+      properties from objects using spread operator<code>...</code> e.
+      g.<code>[a, b] = [1, 2]</code><code>[a, ...rest] = [1, 2, 3, 4]</code><code>array = [...array, a]</code>
     </p>
 
     <p>
-      <b>Strict mode</b> - JS feature that is activated by adding<code
-        >'use strict'</code
-      >line before the required part of code, which disables backward
+      <b>Strict mode</b> - JS feature that is activated by adding<code>'use strict'</code>line before the required part
+      of code, which disables backward
       compatibility and changes script's behavior slightly
     </p>
     <ul>
@@ -595,15 +598,13 @@
     <p>
       <b>Try-Catch</b> - mechanism of error handling in JS, when it tries to
       execute code, then, if it doesn't succeed, catches possible error and,
-      finally, runs some code, e. g.<code
-        >try { a() } catch (e) { console.log(e) } finally { console.log('done')
-        }</code
-      >
+      finally, runs some code, e. g.<code>try { a() } catch (e) { console.log(e) } finally { console.log('done')
+        }</code>
     </p>
 
     <p>
-      <b>Promise</b> - object with unique methods like<code>then</code
-      ><code>catch</code>that is returned by async function and is used to
+      <b>Promise</b> - object with unique methods like<code>then</code><code>catch</code>that is returned by async
+      function and is used to
       notify that it's execution is completed
     </p>
 
@@ -615,10 +616,8 @@
     <p>
       <b>Asynchronous JavaScript And XML (AJAX)</b> - technique that allows
       making HTTP requests directly from scripts. e. g.
-      <code
-        >fetch('http://example.com/data.json').then(response =>
-        response.json())</code
-      >
+      <code>fetch('http://example.com/data.json').then(response =>
+        response.json())</code>
     </p>
 
     <p>
@@ -719,10 +718,8 @@
     </ul>
     <p>
       <b>Redux</b> - immutable state container, where global state of app is an
-      single object tree called store. e. g.<code
-        >function reducer(state, action) { action.type === 'change' && return {
-        ...state, a: 1 } }; let store = createStore(reducer)</code
-      >
+      single object tree called store. e. g.<code>function reducer(state, action) { action.type === 'change' && return {
+        ...state, a: 1 } }; let store = createStore(reducer)</code>
     </p>
     <ul>
       <li>
@@ -734,7 +731,8 @@
         store accordingly
       </li>
       <li>
-        <b>Dispatch</b> - operation of assigning an action to a reducer</li>
+        <b>Dispatch</b> - operation of assigning an action to a reducer
+      </li>
     </ul>
     <p>
       <b>Mobx</b> - simple mutable state container, where data as store is
@@ -779,20 +777,15 @@
       consists of a global storage of all data, methods that alter that storage
       via<code>commit</code>to<code>$store</code>context, and components that
       access it, and can be created by connecting corresponding plugin and
-      creating Vuex object:<code
-        >Vue.use(Vuex); const store = new Vuex.Store({ state: { }, mutations: {
-        } })</code
-      >
+      creating Vuex object:<code>Vue.use(Vuex); const store = new Vuex.Store({ state: { }, mutations: {
+        } })</code>
     </p>
 
     <p>
       <b>Webpack</b> - JS bundler that transforms front-end assets such as HTML,
       CSS, and images and is configured via JS module with exports and rules for
-      sources, e. g.<code>const cssRegex = /\.css$/</code
-      ><code
-        >mode: isEnvProduction ? 'production' : isEnvDevelopment &&
-        'development'</code
-      >
+      sources, e. g.<code>const cssRegex = /\.css$/</code><code>mode: isEnvProduction ? 'production' : isEnvDevelopment &&
+        'development'</code>
     </p>
 
     <p>
@@ -802,14 +795,10 @@
     </p>
     <ul>
       <li>
-        <b>Interface</b> - custom type, e. g.<code
-          >interface Props { a : number }</code
-        >
+        <b>Interface</b> - custom type, e. g.<code>interface Props { a : number }</code>
       </li>
       <li>
-        <b>Generic</b> - polymorphic function, e. g.<code
-          >function (a: number): number { }</code
-        >
+        <b>Generic</b> - polymorphic function, e. g.<code>function (a: number): number { }</code>
       </li>
       <li>
         <b>Abstraction</b> - class that is only meant to be extended from, e.
@@ -817,5 +806,6 @@
       </li>
     </ul>
   </section>
-  </body>
+</body>
+
 </html>
