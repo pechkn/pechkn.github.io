@@ -5,364 +5,235 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
-    <script language="YoptaScript" defer>
-      ксива.ксиваТерпилы.lang внатуре главпетух.language
-
-      йопта хуйнутьЯзык() жЫ
-        вилкойвглаз (ксива.ксиваТерпилы.lang чёткоровно 'ru-RU') жЫ
-          ксива.ксиваТерпилы.lang внатуре 'en'
-        есть иливжопураз ксива.ксиваТерпилы.lang внатуре 'ru-RU'
-      есть
-
-      ясенХуй корневаяЗалупа внатуре ксива.хулиВыёбываешься(':root') нахуй
-
-      вилкойвглаз (ебало.феняНаШару('(prefers-color-scheme:dark)').matches) жЫ
-        корневаяЗалупа.classList.add('dark') нахуй
-      есть
-
-      йопта хуйнутьТему() жЫ
-        корневаяЗалупа.classList.toggle('dark') нахуй
-      есть
-    </script>
-    <script src="yopta.js" defer></script>
     <title>Vlad Pechkin</title>
   </head>
   <body>
-    <section>
-      <header class="header">
-        <h1 lang="en">Vlad Pechkin</h1>
-        <h1 lang="ru">Влад Печкин</h1>
-        <div class="flex">
-          <button onclick="хуйнутьТему()" class="theme-toggle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="theme-toggle--moon"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"
-              />
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="theme-toggle--sun"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
-              />
-            </svg>
-          </button>
-          <button onclick="хуйнутьЯзык()" class="theme-toggle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-translate"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"
-              />
-              <path
-                d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"
-              />
-            </svg>
-          </button>
-        </div>
-      </header>
+    <header class="header">
+      <h1>
+        <span lang="en">Vlad Pechkin</span>
+        <span lang="ru">Влад Печкин</span>
+      </h1>
       <div class="flex">
-        <p lang="en"><b>Front-end Developer & UI/UX Designer</b></p>
-        <p lang="ru"><b>Front-end Разработчик & UI/UX Дизайнер</b></p>
+        <button onclick="toggleTheme()">
+          <svg fill="currentColor" class="themeToggle--sun" viewBox="0 0 16 16">
+            <path
+              d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"
+            />
+          </svg>
+          <svg
+            fill="currentColor"
+            class="themeToggle--moon"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+            />
+          </svg>
+        </button>
+        <button onclick="toggleLang()">
+          <span lang="en">RU</span>
+          <span lang="ru">EN</span>
+        </button>
       </div>
-      <div class="flex">
-        <a href="mailto:mail@pechkin.dev" class="link">Email</a>
-        <a href="https://t.me/pechkindev" class="link">Telegram</a>
-        <a href="https://gitlab.com/pechk.in" class="link">GitLab</a>
-      </div>
-      <div class="flex"></div>
-      <p lang="en">
-        I'm simple in life and efficient in work lover of everything related to
-        programming, a graduate of the Samsung IT Academy with a degree in
-        Android development and an advanced level English speaker who has many
-        projects and a desire to create even more.
-      </p>
-      <p lang="ru">
-        Простой по жизни и эффективный в работе любитель всего, что связано с
-        программированием, выпускник IT-академии Samsung по специальности
-        «Android-разработка», знающий английский язык на продвинутом уровне и
-        имеющий множество проектов, а также желание создавать еще больше.
-      </p>
-    </section>
-    <section>
-      <h2 lang="en">Skills</h2>
-      <h2 lang="ru">Навыки</h2>
-      <div class="flex">
-        <div class="tag html">HTML</div>
-        <div class="tag css">CSS</div>
-        <div class="tag sass">SASS</div>
-        <div class="tag less">Less.js</div>
-        <div class="tag js">JavaScript</div>
-        <div class="tag ts">TypeScript</div>
-        <div class="tag figma">Figma</div>
-        <div class="tag react">React</div>
-        <div class="tag vue">Vue</div>
-        <div class="tag angular">Angular</div>
-        <div class="tag redux">Redux</div>
-        <div class="tag mobx">Mobx</div>
-        <div class="tag vuex">Vuex</div>
-        <div class="tag git">Git</div>
-        <div class="tag node">Node.js</div>
-        <div class="tag electron">Electron</div>
-        <div class="tag mongo">MongoDB</div>
-        <div class="tag linux">Linux</div>
-        <div class="tag bash">Bash</div>
-        <div class="tag ru" lang="en">Russian - native</div>
-        <div class="tag ru" lang="ru">Русский - родной</div>
-        <div class="tag en" lang="en">English - C1</div>
-        <div class="tag en" lang="ru">Английский - C1</div>
-        <div class="tag es" lang="en">Spanish - B1</div>
-        <div class="tag es" lang="ru">Испанский - B1</div>
-      </div>
-    </section>
-    <section>
-      <h2 lang="en">Portfolio</h2>
-      <h2 lang="ru">Портфолио</h2>
-      <div class="items">
-        <a class="card" target="_blank" href="https://2035school.ru">
-          <img
-            class="card__preview"
-            src="res/open-school.webp"
-            alt="Site preview"
+    </header>
+    <h2>
+      <span lang="en">Front-end developer and UI/UX designer</span>
+      <span lang="ru">Front-end разработчик и UI/UX дизайнер</span>
+    </h2>
+    <div class="flex">
+      <a
+        href="https://goo.gl/maps/srGXb6p2Tcd5ZmyS9"
+        class="flex"
+        target="_blank"
+      >
+        <svg fill="currentColor" viewBox="0 0 16 16">
+          <path
+            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"
           />
-          <div class="card__body">
-            <h3 lang="en">Open School</h3>
-            <h3 lang="ru">Открытая Школа</h3>
-            <div class="flex">
-              <div class="tag vue">Vue</div>
-              <div class="tag vuex">Vuex</div>
-              <div class="tag less">Less.js</div>
-            </div>
-          </div>
-        </a>
-        <a class="card" target="_blank" href="http://fin-monitoring.com">
-          <img
-            class="card__preview"
-            src="res/fin-monitoring.webp"
-            alt="Site preview"
+          <path
+            d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
           />
-          <div class="card__body">
-            <h3 lang="en">Financial blog</h3>
-            <h3 lang="ru">Блог ЦФПИ</h3>
-            <div class="flex">
-              <div class="tag ts">TypeScript</div>
-              <div class="tag react">React</div>
-              <div class="tag mobx">Mobx</div>
-            </div>
-          </div>
-        </a>
-        <a class="card" target="_blank" href="http://chargeback-law.ru">
-          <img
-            class="card__preview"
-            src="res/chargeback-law.webp"
-            alt="Site preview"
+        </svg>
+        <span lang="en">Tolyatti, Russia</span>
+        <span lang="ru">Тольятти, Россия</span>
+      </a>
+      <a href="mailto:to@pechk.in" class="flex">
+        <svg fill="currentColor" viewBox="0 0 16 16">
+          <path
+            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
           />
-          <div class="card__body">
-            <h3 lang="en">Financial landing</h3>
-            <h3 lang="ru">Лендинг ЦФПИ</h3>
-            <div class="flex">
-              <div class="tag html">HTML</div>
-              <div class="tag sass">SASS</div>
-              <div class="tag node">Node.js</div>
-            </div>
-          </div>
-        </a>
-        <a class="card" target="_blank" href="https://retreat-practicum.ru">
-          <img
-            class="card__preview"
-            src="res/retreat-practicum.webp"
-            alt="Site preview"
+        </svg>
+        to@pechk.in
+      </a>
+      <a href="https://gitlab.com/pechk.in" class="flex" target="_blank">
+        <svg fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M4.844.904a1.007 1.007 0 00-.955.692l-2.53 7.783c0 .007-.005.012-.007.02L.07 13.335a1.437 1.437 0 00.522 1.607l11.072 8.045a.566.566 0 00.67-.004l11.074-8.04a1.436 1.436 0 00.522-1.61l-1.26-3.867a.547.547 0 00-.031-.104l-2.526-7.775a1.004 1.004 0 00-.957-.684.987.987 0 00-.949.69l-2.406 7.408H8.203l-2.41-7.408a.987.987 0 00-.943-.69h-.006zm-.006 1.42l2.174 6.678H2.674l2.164-6.678zm14.328 0l2.168 6.678h-4.342l2.174-6.678zm-10.594 7.81h6.862l-2.15 6.618L12 20.693 8.572 10.135zm-5.515.005h4.322l3.086 9.5-7.408-9.5zm13.568 0h4.326l-6.703 8.588-.709.914 2.959-9.108.127-.394zM2.1 10.762l6.978 8.947-7.818-5.682a.305.305 0 01-.112-.341l.952-2.924zm19.8 0l.952 2.922a.305.305 0 01-.11.341v.002l-7.82 5.68.025-.035 6.953-8.91Z"
           />
-          <div class="card__body">
-            <h3 lang="en">Retreat landing</h3>
-            <h3 lang="ru">Лендинг ретрита</h3>
-            <div class="flex">
-              <div class="tag html">HTML</div>
-              <div class="tag css">CSS</div>
-              <div class="tag js">JavaScript</div>
-            </div>
-          </div>
-        </a>
-        <a class="card" target="_blank" href="http://содд.рф">
-          <img
-            class="card__preview"
-            src="res/dars-landing.webp"
-            alt="Site preview"
+        </svg>
+        GitLab
+      </a>
+      <a href="https://t.me/pechkindev" class="flex">
+        <svg fill="currentColor" viewBox="0 0 16 16">
+          <path
+            d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"
           />
-          <div class="card__body">
-            <h3 lang="en">DARS landing</h3>
-            <h3 lang="ru">Лендинг СОДД</h3>
-            <div class="flex">
-              <div class="tag html">HTML</div>
-              <div class="tag css">CSS</div>
-            </div>
-          </div>
-        </a>
-        <a class="card" target="_blank" href="http://tltsu-pro.space">
-          <img
-            class="card__preview"
-            src="res/tltsu-library.webp"
-            alt="Site preview"
-          />
-          <div class="card__body">
-            <h3 lang="en">TLTSU library</h3>
-            <h3 lang="ru">Библиотека ТГУ</h3>
-            <div class="flex">
-              <div class="tag html">HTML</div>
-              <div class="tag css">CSS</div>
-              <div class="tag js">JavaScript</div>
-            </div>
-          </div>
-        </a>
-        <a class="card" target="_blank" href="social-network">
-          <img
-            class="card__preview"
-            src="res/social-network.webp"
-            alt="Site preview"
-          />
-          <div class="card__body">
-            <h3 lang="en">Social network</h3>
-            <h3 lang="ru">Социальная cеть</h3>
-            <div class="flex">
-              <div class="tag ts">TypeScript</div>
-              <div class="tag react">React</div>
-              <div class="tag mobx">Mobx</div>
-            </div>
-          </div>
-        </a>
-      </div>
-    </section>
-    <section>
-      <h2 lang="en">Experience</h2>
-      <h2 lang="ru">Опыт</h2>
-      <div class="items">
-        <div class="card">
-          <div class="card__body">
-            <p lang="en" class="dim">July 2021 - present</p>
-            <p lang="ru" class="dim">Июль 2021 - по сей день</p>
-            <h3 lang="en">Open School ltd.</h3>
-            <h3 lang="ru">ООО «Открытая школа»</h3>
-            <h3 lang="en">Front-end developer</h3>
-            <h3 lang="ru">Front-end разработчик</h3>
-            <p lang="en">
-              Participation in the development of a massive web application for
-              online education in schools of CIS countries as Junior programmer
-            </p>
-            <p lang="ru">
-              Участие в разработке комплексного веб-приложения для онлайн
-              обучения в школах СНГ в качестве Junior-программиста
-            </p>
-            <h4 lang="en">Technology stack:</h4>
-            <h4 lang="ru">Технологический стек:</h4>
-            <div class="flex">
-              <div class="tag vue">Vue</div>
-              <div class="tag vuex">Vuex</div>
-              <div class="tag less">Less.js</div>
-            </div>
-          </div>
+        </svg>
+        Telegram
+      </a>
+    </div>
+    <p>
+      7 <span lang="en">months of experience at</span>
+      <span lang="ru">месяцев опыта в</span>
+      <a href="https://2035school.ru" target="_blank">
+        <span lang="en">Open School</span>
+        <span lang="ru">Открытой школе</span> </a
+      >&
+      <a
+        href="https://tadviser.com/index.php/Company:Quick_dining_room"
+        target="_blank"
+        >Quick Dining Room</a
+      >
+    </p>
+    <p>
+      1.5
+      <span lang="en"> years of experience in </span>
+      <span lang="ru"> года опыта в </span>
+      HTML, CSS, SASS, JavaScript, TypeScript, Figma, React, Vue, Redux, Vuex,
+      Git, Node.js, MongoDB, Linux, Bash
+    </p>
+    <p>
+      <span lang="en">Graduate of</span>
+      <span lang="ru">Выпускник</span>
+      <a href="https://myitacademy.ru" target="_blank">
+        <span lang="en">Samsung IT Academy</span>
+        <span lang="ru">IT-Академии Samsung</span>
+      </a>
+      &
+      <a href="https://cyberschool.msu.ru" target="_blank"
+        ><span lang="en">Moscow State University Cyberschool </span>
+        <span lang="ru">Кибершколы МГУ</span> </a
+      >,
+      <span lang="en">student of mobile and web technologies at</span>
+      <span lang="ru">студент мобильных и сетевых технологий в</span>
+      <a href="https://www.tltsu.ru" target="_blank"
+        >
+        <span lang="en">Tolyatti State University</span>
+      <span lang="ru">Тольяттинском Государственном Университете</span>
+        </a
+      >
+    </p>
+    <p class="flex">
+      <svg fill="currentColor" viewBox="0 0 16 16">
+        <path
+          d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"
+        />
+        <path
+          d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"
+        />
+      </svg>
+      <span lang="en">C1 level English</span>
+      <span lang="ru">Уровень английского - C1</span>
+    </p>
+    <h2 lang="en">Portfolio</h2>
+    <h2 lang="ru">Портфолио</h2>
+    <div class="items">
+      <a class="card" target="_blank" href="https://2035school.ru">
+        <img
+          class="card__preview"
+          src="res/open-school.webp"
+          alt="Site preview"
+        />
+        <div class="card__body">
+          <h3 lang="en">Open School</h3>
+          <h3 lang="ru">Открытая Школа</h3>
         </div>
-        <div class="card">
-          <div class="card__body">
-            <p lang="en" class="dim">April 2021 - May 2021</p>
-            <p lang="ru" class="dim">Апрель 2021 - Май 2021</p>
-            <h3>Quick Dining Room</h3>
-            <h3 lang="en">Front-end developer</h3>
-            <h3 lang="ru">Front-end разработчик</h3>
-            <p lang="en">
-              Incomplete internship participation in the development of an
-              application for restaurants based on computer vision
-            </p>
-            <p lang="ru">
-              Незавершенная стажировка в стартапе по разработке приложения для
-              ресторанов, основанного на компьютерном зрении
-            </p>
-            <h4 lang="en">Technology stack:</h4>
-            <h4 lang="ru">Технологический стек:</h4>
-            <div class="flex">
-              <div class="tag angular">Angular</div>
-              <div class="tag sass">SASS</div>
-              <div class="tag electron">Electron</div>
-            </div>
-          </div>
+      </a>
+      <a class="card" target="_blank" href="http://fin-monitoring.com">
+        <img
+          class="card__preview"
+          src="res/fin-monitoring.webp"
+          alt="Site preview"
+        />
+        <div class="card__body">
+          <h3 lang="en">Financial blog</h3>
+          <h3 lang="ru">Блог ЦФПИ</h3>
         </div>
-      </div>
-    </section>
-    <section>
-      <h2 lang="en">Education</h2>
-      <h2 lang="ru">Образование</h2>
-      <div class="items">
-        <div class="card">
-          <div class="card__body">
-            <p lang="en" class="dim">September 2021 - present</p>
-            <p lang="ru" class="dim">Сентябрь 2021 - по сей день</p>
-            <h3 lang="en">Togliatti State University</h3>
-            <h3 lang="ru">Гимназия 11, Москва</h3>
-            <h3 lang="en">Higher education</h3>
-            <h3 lang="ru">Высшее образование</h3>
-            <p lang="en">
-              Higher education at the flagship state university at the faculty
-              of «Mobile and network technologies»
-            </p>
-            <p lang="ru">
-              Высшее образование в опорном государственном университете на
-              факультете «Мобильные и сетевые технологии»
-            </p>
-          </div>
+      </a>
+      <a class="card" target="_blank" href="http://chargeback-law.ru">
+        <img
+          class="card__preview"
+          src="res/chargeback-law.webp"
+          alt="Site preview"
+        />
+        <div class="card__body">
+          <h3 lang="en">Financial landing</h3>
+          <h3 lang="ru">Лендинг ЦФПИ</h3>
         </div>
-        <div class="card">
-          <div class="card__body">
-            <p lang="en" class="dim">September 2010 - May 2021</p>
-            <p lang="ru" class="dim">Сентябрь 2010 - Май 2021</p>
-            <h3 lang="en">Eleventh gymnasium, Moscow</h3>
-            <h3 lang="ru">Гимназия 11, Москва</h3>
-            <h3 lang="en">General education</h3>
-            <h3 lang="ru">Среднее образование</h3>
-            <p lang="en">
-              Secondary general education received at the gymnasium with
-              in-depth study of physics, computer science and mathematics
-            </p>
-            <p lang="ru">
-              Среднее общее образование, полученное в гимназии в классе с
-              физико-математическим уклоном
-            </p>
-          </div>
+      </a>
+      <a class="card" target="_blank" href="https://retreat-practicum.ru">
+        <img
+          class="card__preview"
+          src="res/retreat-practicum.webp"
+          alt="Site preview"
+        />
+        <div class="card__body">
+          <h3 lang="en">Retreat landing</h3>
+          <h3 lang="ru">Лендинг ретрита</h3>
         </div>
-        <div class="card">
-          <div class="card__body">
-            <p lang="en" class="dim">September 2020 - May 2020</p>
-            <p lang="ru" class="dim">Сентябрь 2020 - Май 2020</p>
-            <h3 lang="en">Samsung IT Academy</h3>
-            <h3 lang="ru">IT-Академия Samsung</h3>
-            <h3 lang="en">Android development course</h3>
-            <h3 lang="ru">Курс Андроид-разработки</h3>
-            <p lang="en">
-              One-year course of «Android Development» with the defense of the
-              final project, completed with honors
-            </p>
-            <p lang="ru">
-              Курс длиной в один учебный год по направлению «Android-разработка»
-              с защитой итогового проекта, завершенный с отличием
-            </p>
-          </div>
+      </a>
+      <a class="card" target="_blank" href="http://содд.рф">
+        <img
+          class="card__preview"
+          src="res/dars-landing.webp"
+          alt="Site preview"
+        />
+        <div class="card__body">
+          <h3 lang="en">DARS landing</h3>
+          <h3 lang="ru">Лендинг СОДД</h3>
         </div>
-      </div>
-    </section>
+      </a>
+      <a class="card" target="_blank" href="http://tltsu-pro.space">
+        <img
+          class="card__preview"
+          src="res/tltsu-library.webp"
+          alt="Site preview"
+        />
+        <div class="card__body">
+          <h3 lang="en">TLTSU library</h3>
+          <h3 lang="ru">Библиотека ТГУ</h3>
+        </div>
+      </a>
+      <a class="card" target="_blank" href="social-network">
+        <img
+          class="card__preview"
+          src="res/social-network.webp"
+          alt="Site preview"
+        />
+        <div class="card__body">
+          <h3 lang="en">Social network</h3>
+          <h3 lang="ru">Социальная cеть</h3>
+        </div>
+      </a>
+    </div>
   </body>
 </html>
+<script>
+  document.documentElement.lang = navigator.language
+
+  function toggleLang() {
+    if (document.documentElement.lang === "ru-RU") {
+      document.documentElement.lang = "en"
+    } else document.documentElement.lang = "ru-RU"
+  }
+
+  const rootEl = document.querySelector(":root")
+
+  if (window.matchMedia("(prefers-color-scheme:dark)").matches) {
+    rootEl.classList.add("dark")
+  }
+
+  function toggleTheme() {
+    rootEl.classList.toggle("dark")
+  }
+</script>
