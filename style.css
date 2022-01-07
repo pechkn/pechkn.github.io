@@ -1,73 +1,38 @@
-:root {
-  --fg: #111;
-  --bg: #fff;
-  --dim: #ccc;
-  --accent: #07f;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --fg: #eee;
-    --bg: #000;
-    --dim: #444;
+@layer base {
+  * {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+  :not(html[lang*="ru"]) [lang="ru"],
+  html[lang*="ru"] [lang="en"]{
+    display: none;
+  }
+
+  html[lang*="ru"] [lang="ru"]{
+    display: initial;
+  }
+
+  li {
+    @apply list-disc ml-4 my-2;
   }
 }
 
-.dark {
-  --fg: #eee;
-  --bg: #000;
-  --dim: #444;
-}
-
-* {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  border: none;
-  outline: none;
-  box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, "Roboto",
-    sans-serif;
-  background-color: transparent;
-  text-decoration: none;
-  line-height: 1.25;
-  color: inherit;
-  text-align: left;
-}
-
-:not(html[lang*="ru"]) [lang="ru"],
-html[lang*="ru"] [lang="en"],
-.themeToggle--moon,
-.dark .themeToggle--sun {
-  display: none;
-}
-
-html[lang*="ru"] [lang="ru"],
-.dark .themeToggle--moon {
-  display: initial;
-}
-
-body {
+/* body {
   margin: 0 auto;
   max-width: 1000px;
   background-color: var(--bg);
   color: var(--fg);
-  display: flex;
-  flex-direction: column;
-  padding: .5rem;
-}
-
-button {
-  font-size: inherit;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-svg {
-  height: 1.25rem;
-  width: auto;
+  padding: 0.5rem;
 }
 
 p,
@@ -81,6 +46,7 @@ li,
 button,
 section,
 div > a,
+.avatar,
 .card {
   margin: 0.5rem;
 }
@@ -90,8 +56,23 @@ p {
   line-height: 1.5;
 }
 
-p svg, a svg {
-  margin-right: .25rem;
+button {
+  font-size: inherit;
+  cursor: pointer;
+}
+
+svg {
+  height: 1.25rem;
+  width: auto;
+  color: inherit;
+}
+
+a {
+  color: var(--accent);
+}
+
+a svg {
+  margin-right: 0.25rem;
 }
 
 h1 {
@@ -108,24 +89,21 @@ h2 {
   justify-content: space-between;
 }
 
-a {
-  color: var(--accent);
-}
-
-.items {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
 .flex {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
+}
+
 .card {
   outline: 1px solid var(--dim);
   width: calc(100% - 1rem);
+  color: var(--fg);
 }
 
 .card__preview {
@@ -133,8 +111,12 @@ a {
   height: 13rem;
   display: block;
   object-fit: cover;
+  border-bottom: 1px solid var(--dim);
 }
 
-.card__body {
-  padding: 0.5rem;
-}
+.avatar {
+  width: 15rem;
+  margin-left: auto;
+  border-radius: 50%;
+  border: 2px solid var(--dim); 
+} */
