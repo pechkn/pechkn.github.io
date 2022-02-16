@@ -1274,4 +1274,12 @@ h2 {
   .lg\:pt-1 {
     padding-top: 0.25rem;
   }
+
+  .lg\:pl-1 {
+    padding-left: 0.25rem;
+  }
+
+  .lg\:pt-3 {
+    padding-top: 0.75rem;
+  }
 }
