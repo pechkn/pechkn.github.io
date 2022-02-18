@@ -47,13 +47,11 @@
 		</svg>
 		<h1 class="m-2 my-4 text-4xl font-medium text-center">Vlad Pechkin</h1>
 		<p class="m-2 my-4 text-xl text-center">Passionate Front-end engineer & UI/UX designer</p>
-		<div class="relative my-6 p-2 max-w-sm mx-auto md:max-w-none">
-				<img class="hidden md:block p-20 pt-6 max-h-96" src="res/hero.webp" alt="Website preview" />
-				<img class="absolute top-0 left-0 hidden p-2 md:block" src="res/macbook.png" aria-hidden="true" alt=""/>
-				<img class="z-10 rounded-3xl m-4 w-72 md:hidden lg:block lg:w-64 lg:pl-1 lg:pt-2 lg:px-2 lg:right-0 lg:absolute top-0 lg:top-10" src="res/iphone-preview.png" alt="Website preview"/>
-				<img class="z-20 absolute top-0 left-0 p-2 md:hidden lg:block lg:w-72 lg:right-0 lg:ml-auto lg:top-10" src="res/iphone.png" aria-hidden="true" alt=""/>
+		<div class="relative p-2 my-6 flex items-center justify-center mx-auto md:max-w-none ">
+				<img class="hidden md:block w-full max-w-4xl" src="res/retreat-mac.webp" alt="Website preview" />
+				<img class="lg:absolute max-w-xs top-0 md:hidden lg:block lg:w-60 right-0 top-20" src="res/retreat-iphone.webp" aria-hidden="true" alt=""/>
 		</div>
-		<div class="flex flex-wrap justify-center my-4">
+		<div class="flex flex-wrap justify-center my-6">
 				<div class="m-2 mb-4 max-w-prose md:w-2/5">
 						<p class="font-medium flex items-center text-xl mb-2">
 								<svg class="h-6 text-blue-600 mr-3" viewBox="0 0 20 20">
@@ -135,7 +133,7 @@
 				</div>
 		</div>
 		<p class="p-2 text-2xl font-medium text-center my-4">Ready to make something awesome together?</p>
-		<div class="sticky lg:static bottom-0 p-2 z-20">
+		<div class="sticky bottom-0 p-2 z-20 md:static">
 				<a href="mailto:to@pechk.in"
 					 class='bg-blue-600 block text-center max-w-sm text-white rounded-lg px-4 py-2 m-2 mx-auto w-full'>
 						Get in touch via email</a>
@@ -143,7 +141,7 @@
 </main>
 <footer class="w-full bg-black text-white flex flex-col items-center px-2 py-4 mt-4">
 		<div class="flex items-center">
-				<a href="https://gitlab.com/pechk.in" class="m-2" target="_blank">
+				<a href="https://gitlab.com/pechk.in" class="m-2 my-6" target="_blank">
 						<svg class="h-6" viewBox="0 0 24 24" aria-label="GitLab">
 								<g clip-path="url(#clip0_495_30)">
 										<path d="M4.84395 0.903984C4.63223 0.904292 4.42599 0.971324 4.25455 1.09555C4.0831 1.21978 3.95518 1.39489 3.88895 1.59598L1.35895 9.37898C1.35895 9.38598 1.35395 9.39098 1.35195 9.39898L0.0699488 13.335C-0.0239188 13.6236 -0.0239685 13.9346 0.069807 14.2233C0.163583 14.512 0.346366 14.7636 0.591949 14.942L11.6639 22.987C11.7615 23.0577 11.8791 23.0955 11.9996 23.0948C12.1201 23.0941 12.2372 23.0549 12.3339 22.983L23.4079 14.943C23.6543 14.7645 23.8375 14.5124 23.9314 14.2231C24.0252 13.9337 24.0247 13.622 23.9299 13.333L22.6699 9.46598C22.6631 9.43038 22.6527 9.39554 22.6389 9.36199L20.1129 1.58698C20.0456 1.38681 19.9169 1.21296 19.7451 1.09015C19.5733 0.967353 19.3671 0.901858 19.1559 0.902984C18.9448 0.901329 18.7386 0.96746 18.5678 1.09166C18.397 1.21586 18.2705 1.39157 18.2069 1.59298L15.8009 9.00099H8.20295L5.79295 1.59298C5.72971 1.39256 5.60414 1.21755 5.43453 1.09344C5.26492 0.969338 5.06012 0.902613 4.84995 0.902984H4.84395V0.903984ZM4.83795 2.32398L7.01195 9.00198H2.67395L4.83795 2.32398ZM19.1659 2.32398L21.3339 9.00198H16.9919L19.1659 2.32398ZM8.57195 10.134H15.4339L13.2839 16.752L11.9999 20.693L8.57195 10.135V10.134ZM3.05695 10.139H7.37895L10.4649 19.639L3.05695 10.139ZM16.6249 10.139H20.9509L14.2479 18.727L13.5389 19.641L16.4979 10.533L16.6249 10.139ZM2.09995 10.762L9.07795 19.709L1.25995 14.027C1.20763 13.9893 1.1686 13.936 1.14848 13.8747C1.12836 13.8134 1.12817 13.7474 1.14795 13.686L2.09995 10.762ZM21.8999 10.762L22.8519 13.684C22.8719 13.7452 22.8721 13.8111 22.8523 13.8723C22.8325 13.9336 22.7939 13.987 22.7419 14.025V14.027L14.9219 19.707L14.9469 19.672L21.8999 10.762Z"
@@ -156,7 +154,7 @@
 								</defs>
 						</svg>
 				</a>
-				<a href="https://t.me/pechkindev" class="m-2" target="_blank">
+				<a href="https://t.me/pechkindev" class="m-2 my-6" target="_blank">
 						<svg class="h-6" viewBox="0 0 24 24" aria-label="Telegram">
 								<path xmlns="http://www.w3.org/2000/svg" d="M21.2935 2.91409C18.3405 4.13713 5.67861 9.38185 2.18013 10.8113C-0.16611 11.7269 1.20741 12.5854 1.20741 12.5854C1.20741 12.5854 3.21021 13.272 4.92717 13.7871C6.64389 14.3021 7.55949 13.7299 7.55949 13.7299L15.6283 8.29345C18.4896 6.34777 17.8029 7.95001 17.1161 8.63689C15.6283 10.1249 13.1676 12.4709 11.1074 14.3595C10.1918 15.1606 10.6495 15.8472 11.0503 16.1907C12.538 17.4497 16.6013 20.0249 16.83 20.1965C18.0389 21.0523 20.4168 22.2843 20.7785 19.6815L22.2091 10.6971C22.667 7.66417 23.1247 4.86001 23.1818 4.05889C23.3537 2.11297 21.2935 2.91409 21.2935 2.91409Z" fill="currentColor"/>
 						</svg>
@@ -164,7 +162,7 @@
 		</div>
 		<p class="m-2 leading-none">© 2022 pechk.in</p>
 		<a href="https://pechk.in">
-				<svg class="text-blue-600 fill-current m-2 h-6" viewBox="0 0 22 32">
+				<svg class="text-blue-600 fill-current m-2 h-6 my-6" viewBox="0 0 22 32">
 						<path d="M18 32C16.4489 32 15 30.7092 15 29V28C15 26.2908 16.4489 25 18 25H19C20.5511 25 22 26.2908 22 28V29C22 30.7092 20.5511 32 19 32H18Z"
 									fill="currentColor"/>
 						<path fill-rule="evenodd" clip-rule="evenodd"
@@ -173,7 +171,7 @@
 				</svg>
 		</a>
 </footer>
-<img class="fixed top-0 z-[-1] h-full blur-2xl opacity-25" src="res/hero-bg.jpg" aria-hidden="true" alt=""/>
+<img class="fixed top-0 z-[-1] h-full w-full blur-2xl opacity-25" src="res/bg.webp" aria-hidden="true" alt=""/>
 </body>
 </html>
 <script>
